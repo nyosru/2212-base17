@@ -24,7 +24,7 @@ use Illuminate\Support\Facades\Auth;
 //     return redirect('/');
 // })->name('logout');
 
-Route::get('/', fn () => view('welcome'))->name('home');
+// Route::get('/', fn () => view('welcome'))->name('home');
 // Route::any('/{any}', fn () => view('welcome'))->where('any', '.*');
 
 // // /*
