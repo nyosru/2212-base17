@@ -20,7 +20,8 @@ const mix = require('laravel-mix');
 // mix.copy('resources/img', 'public/img')
 // mix.copy('resources/public', 'public')
 
-mix.copy('Modules/Phpcat/Resources/to-storage-public', 'storage/app/public/')
+// стартовые файлы из модуля
+// mix.copy('Modules/Phpcat/Resources/to-storage-public', 'storage/app/public/')
 
 
 // mix.js('resources/js/app.js', 'public/js')

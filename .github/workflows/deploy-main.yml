@@ -68,4 +68,6 @@ jobs:
           message: |
             +++ ${{ github.event_name }} в ${{ github.repository }} +++
             👨🏻‍💻 ${{github.actor}} 
+            comit: ${{github.comit}} 
              задание ${{github.job}}.
+             all ${{github}} 
