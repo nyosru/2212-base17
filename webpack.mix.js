@@ -11,22 +11,22 @@ const mix = require('laravel-mix');
  |
  */
 
-/* Allow multiple Laravel Mix applications*/
-require('laravel-mix-merge-manifest');
-mix.mergeManifest();
-/*----------------------------------------*/
+// /* Allow multiple Laravel Mix applications*/
+// require('laravel-mix-merge-manifest');
+// mix.mergeManifest();
+// /*----------------------------------------*/
 
 
-mix.copy('resources/img', 'public/img')
-mix.copy('resources/public', 'public')
+// mix.copy('resources/img', 'public/img')
+// mix.copy('resources/public', 'public')
 
 mix.copy('Modules/Phpcat/Resources/to-storage-public', 'storage/app/public/')
 
 
-mix.js('resources/js/app.js', 'public/js')
-    // .js('resources/phpcat/js/app.js', 'public/phpcat2/js')
-    .vue()
-    .sass('resources/sass/app.scss', 'public/css');
+// mix.js('resources/js/app.js', 'public/js')
+//     // .js('resources/phpcat/js/app.js', 'public/phpcat2/js')
+//     .vue()
+//     .sass('resources/sass/app.scss', 'public/css');
 
 
 // const mix2 = require('laravel-mix');
