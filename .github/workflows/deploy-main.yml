@@ -73,10 +73,7 @@ jobs:
           # 5152088168, # serhio
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            👼🏻 ${{ github.repository }} 👼🏻
-            👼🏻 ${{ github.GITHUB_API_URL }} 👼🏻
+            👼🏻 ${{ github.repository }} 
+            ${{ github.GITHUB_API_URL }}
             👨🏻‍💻 ${{github.actor}} сделал ${{ github.event_name }}
-            job.status: {{ job.status }}
-            jobs.<job_id>.result: {{ jobs.deploy.result }}
-            jobs.deploy.result: {{ jobs.deploy.result }}
-            jobs.setup_soft.result: {{ jobs.setup_soft.result }}
+         
