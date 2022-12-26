@@ -16,11 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-
-
-
+    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
 
     {{-- <meta charset="UTF-8"> --}}
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -35,7 +31,7 @@
     {{-- <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#5bbad5"> --}}
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
-    <title>Народная Экономика</title>
+    <title>web site</title>
 
     {{-- <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script> --}}
     {{-- <link href="{{ sd }}bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet" /> --}}
@@ -72,7 +68,7 @@
 
 </head>
 
-<body>
+<body style="background-color: #fff;">
     @if (1 == 2)
         {{ Auth::user()->socIdVk }}
         <br />
@@ -89,15 +85,15 @@
             {{-- <A href="{{ route('auth.logout') }}">exit</a> --}}
         @endif
     @endif
-7987987
-    <div id="app">
-        {{-- @yield('content') --}}
-    </div>
-    9999
+{{-- 7987987 --}}
+    {{-- <div id="app"> --}}
+        @yield('content')
+    {{-- </div> --}}
+    {{-- 9999 --}}
 </body>
 
 <!-- Scripts -->
-<script src="{{ asset('phpcat2/js/app.js') }}?{{ date('ymdhis') }}" defer></script>
+{{-- <script src="{{ asset('phpcat2/js/app.js') }}?{{ date('ymdhis') }}" defer></script> --}}
 {{-- {{ date('ymdhis') }} --}}
 
 </html>
