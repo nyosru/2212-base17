@@ -20,7 +20,7 @@
 </body>
 {{-- Laravel Mix - JS File --}}
 {{-- {{ mix('bill/app.js') }} --}}
-<script src="{{ asset('storage/bill/app.js') }}"></script>
+<script src="{{ asset('/bill/app.js') }}"></script>
 {{-- <script src="{{ asset('Modules/phpcat/public/phpcat77/js.js') }}"></script> --}}
 
 </html>
