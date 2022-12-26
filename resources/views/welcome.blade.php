@@ -15,7 +15,7 @@
         <tr>
             <td width="40%"><img src="/img/leprekon.webp" style="max-height: 100%; max-width: 100%;" /></td>
             <td>
-                <h2>Сайт {{ $HTTP_HOST }} ещё в&nbsp;разработке,
+                <h2>Сайт {{ $HTTP_HOST }} в&nbsp;разработке,
                     заходите&nbsp;завтра</h2>
                 <br />
                 <br />
