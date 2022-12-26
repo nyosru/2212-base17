@@ -9,7 +9,7 @@
     <title>В Мире БИльярда - Тюменский бильярдный салон </title>
 
     {{-- Laravel Mix - CSS File --}}
-    <link rel="stylesheet" href="{{ mix('storage/bill/css.css') }}">
+    {{-- <link rel="stylesheet" href="{{ mix('storage/bill/css.css') }}"> --}}
 
 </head>
 
