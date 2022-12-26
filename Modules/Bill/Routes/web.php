@@ -33,3 +33,5 @@ $appRoutes = function() {
 // Route::group(array('domain' => 'php-cat.com'), $appRoutes);
 Route::group(array('domain' => 'bill.17.ru'), $appRoutes);
 Route::group(array('domain' => 'bill.base17.php-cat.com'), $appRoutes);
+// тюменьбильярд.рф
+Route::group(array('domain' => 'xn--90agbnpci1al7hdqv.xn--p1ai'), $appRoutes);
