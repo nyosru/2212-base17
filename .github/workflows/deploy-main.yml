@@ -44,19 +44,19 @@ jobs:
             /opt/php74/bin/php ./composer.phar i --ignore-platform-req=ext-zip
             /opt/php74/bin/php artisan migrate
 
-      - name: setup npm
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SERVER_IP }}
-          username: ${{ secrets.SERVER_USERNAME }}
-          password: ${{ secrets.SERVER_PASSWORD }}
-          script: |
-            cd www
-            cd ${{ secrets.FOLDER_DEV }}
-            npm i
-            npm run dev
-      #     # npm run prod
-      #     # script: cd www && cd ${{ secrets.FOLDER }} && npm i && npm run dev
+      # - name: setup npm
+      #   uses: appleboy/ssh-action@master
+      #   with:
+      #     host: ${{ secrets.SERVER_IP }}
+      #     username: ${{ secrets.SERVER_USERNAME }}
+      #     password: ${{ secrets.SERVER_PASSWORD }}
+      #     script: |
+      #       cd www
+      #       cd ${{ secrets.FOLDER_DEV }}
+      #       npm i
+      #       npm run dev
+      # #     # npm run prod
+      # #     # script: cd www && cd ${{ secrets.FOLDER }} && npm i && npm run dev
 
       - name: send telega
         uses: appleboy/telegram-action@master
@@ -66,8 +66,8 @@ jobs:
           # 5152088168, # serhio
           token: ${{ secrets.TELEGRAM_TOKEN }}
           message: |
-            +++ ${{ github.event_name }} в ${{ github.repository }} +++
-            👨🏻‍💻 ${{github.actor}} 
+            👼🏻👼🏻👼🏻 ${{ github.repository }}
+            👨🏻‍💻 ${{github.actor}} сделал ${{ github.event_name }}
             comit: ${{github.comit}} 
              задание ${{github.job}}.
              all ${{github}} 
