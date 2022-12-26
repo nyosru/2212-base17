@@ -9,3 +9,4 @@ $appRoutes = function() {
 
 Route::group(array('domain' => 'php-cat.com'), $appRoutes);
 Route::group(array('domain' => 'phpcat.17.ru'), $appRoutes);
+Route::group(array('domain' => 'phpcat.base17.php-cat.com'), $appRoutes);
