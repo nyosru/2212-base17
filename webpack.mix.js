@@ -20,7 +20,7 @@ mix.mergeManifest();
 mix.copy('resources/img', 'public/img')
 mix.copy('resources/public', 'public')
 
-mix.copy('resources/to-storage-public', 'storage/app/public/')
+mix.copy('Modules/Phpcat/Resources/to-storage-public', 'storage/app/public/')
 
 
 mix.js('resources/js/app.js', 'public/js')
