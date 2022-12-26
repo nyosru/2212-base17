@@ -23430,9 +23430,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
-/***/ "./Resources/assets/js-phpcat/components/news.ts":
+/***/ "./Resources/assets/js-phpcat/components/news.js":
 /*!*******************************************************!*\
-  !*** ./Resources/assets/js-phpcat/components/news.ts ***!
+  !*** ./Resources/assets/js-phpcat/components/news.js ***!
   \*******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -23466,34 +23466,16 @@ var getNews = /*#__PURE__*/function () {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return axios__WEBPACK_IMPORTED_MODULE_2___default().get('/api/news'
-          // ,
-          //     {
-          //         domain: window.location.hostname,
-          //         // show_datain: 1,
-          //         answer: 'json',
-
-          //         // s: md5('1'),
-          //         s: md5(window.location.hostname),
-
-          //         // id: 1,
-          //         id: [
-          //             360209578, // я
-          //             // 1368605419, // я тест
-          //             2037908418 // ваш метролог
-          //         ],
-          //         msg
-          //     }
-          )["catch"](function (error) {
-            console.log("error", error);
+          return axios__WEBPACK_IMPORTED_MODULE_2___default().get('/api/phpcat/news').then(function (res) {
+            // console.log('res', res);
+            news_data.value = res.data.data;
+          })["catch"](function (error) {
+            console.log('error', error);
+            errored.value = true;
             return 'errored';
           });
         case 2:
           res = _context.sent;
-          _context.next = 5;
-          return res.data.result;
-        case 5:
-          news_data.value = _context.sent;
           if (news_data.value.length > 0) {
             loading.value = false;
           }
@@ -23508,7 +23490,7 @@ var getNews = /*#__PURE__*/function () {
           //         errored.value = true;
           //         return 'errored';
           //     }
-        case 7:
+        case 4:
         case "end":
           return _context.stop();
       }
@@ -23655,10 +23637,10 @@ function news() {
 
 /***/ }),
 
-/***/ "./Resources/assets/js-phpcat/components/tests.ts":
-/*!********************************************************!*\
-  !*** ./Resources/assets/js-phpcat/components/tests.ts ***!
-  \********************************************************/
+/***/ "./Resources/assets/js-phpcat/components/tests0.js":
+/*!*********************************************************!*\
+  !*** ./Resources/assets/js-phpcat/components/tests0.js ***!
+  \*********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -23680,7 +23662,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 var data = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
 var loading = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(true);
-var errored = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('');
+var errored = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(false);
 
 // const sended = ref(false);
 
@@ -23691,49 +23673,19 @@ var getI = /*#__PURE__*/function () {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           _context.next = 2;
-          return axios__WEBPACK_IMPORTED_MODULE_2___default().get('/api/tests'
-          // ,
-          //     {
-          //         domain: window.location.hostname,
-          //         // show_datain: 1,
-          //         answer: 'json',
-
-          //         // s: md5('1'),
-          //         s: md5(window.location.hostname),
-
-          //         // id: 1,
-          //         id: [
-          //             360209578, // я
-          //             // 1368605419, // я тест
-          //             2037908418 // ваш метролог
-          //         ],
-          //         msg
-          //     }
-          )["catch"](function (error) {
+          return axios__WEBPACK_IMPORTED_MODULE_2___default().get('/api/phpcat/tests').then(function (res) {
+            data.value = res.data.data;
+            if (data.value.length > 0) {
+              loading.value = false;
+            }
+          })["catch"](function (error) {
             console.log("error", error);
-            return 'errored';
+            errored.value = true;
+            // return 'errored';
           });
         case 2:
           res = _context.sent;
-          _context.next = 5;
-          return res.data.result;
-        case 5:
-          data.value = _context.sent;
-          if (data.value.length > 0) {
-            loading.value = false;
-          }
-
-          // console.log('fff',res);
-
-          //     if (res.data.res === true) {
-          //         loading.value = true;
-          //         data.value = true;
-          //         return 'sended';
-          //     } else {
-          //         errored.value = true;
-          //         return 'errored';
-          //     }
-        case 7:
+        case 3:
         case "end":
           return _context.stop();
       }
@@ -24101,7 +24053,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! dayjs */ "./node_modules/dayjs/dayjs.min.js");
 /* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _news_ts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./news.ts */ "./Resources/assets/js-phpcat/components/news.ts");
+/* harmony import */ var _news_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./news.js */ "./Resources/assets/js-phpcat/components/news.js");
 /* harmony import */ var _NewsForm_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NewsForm.vue */ "./Resources/assets/js-phpcat/components/NewsForm.vue");
 
 // import sendTelegramm from "./../use/sendTelegramm.ts";
@@ -24125,7 +24077,7 @@ dayjs__WEBPACK_IMPORTED_MODULE_1___default().locale("ru");
     // const result = ref("x");
     // const loading = ref(false);
 
-    var _news = (0,_news_ts__WEBPACK_IMPORTED_MODULE_2__["default"])(),
+    var _news = (0,_news_js__WEBPACK_IMPORTED_MODULE_2__["default"])(),
       getNews = _news.getNews,
       news_data = _news.news_data,
       loading = _news.loading,
@@ -24144,7 +24096,7 @@ dayjs__WEBPACK_IMPORTED_MODULE_1___default().locale("ru");
   //   //   },
   methods: {
     deleteItem: function deleteItem(item_id) {
-      var _news2 = (0,_news_ts__WEBPACK_IMPORTED_MODULE_2__["default"])(),
+      var _news2 = (0,_news_js__WEBPACK_IMPORTED_MODULE_2__["default"])(),
         deleteItem = _news2.deleteItem;
       console.log("deleteItem(item_id) {", item_id);
       deleteItem(item_id);
@@ -24179,7 +24131,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _news_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./news.ts */ "./Resources/assets/js-phpcat/components/news.ts");
+/* harmony import */ var _news_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./news.js */ "./Resources/assets/js-phpcat/components/news.js");
 
 // import sendTelegramm from "./../use/sendTelegramm.ts";
 
@@ -24234,7 +24186,7 @@ __webpack_require__.r(__webpack_exports__);
     submitForm: function submitForm() {
       this.result = false;
       console.log(2222, this.head, this.date, this.text, this.attachment, this.link);
-      var _news = (0,_news_ts__WEBPACK_IMPORTED_MODULE_1__["default"])(),
+      var _news = (0,_news_js__WEBPACK_IMPORTED_MODULE_1__["default"])(),
         addNews = _news.addNews,
         getNews = _news.getNews;
       this.result = addNews(this.head, this.date, this.text, this.attachment, this.link);
@@ -24491,7 +24443,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! dayjs */ "./node_modules/dayjs/dayjs.min.js");
 /* harmony import */ var dayjs__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(dayjs__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _tests_ts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tests.ts */ "./Resources/assets/js-phpcat/components/tests.ts");
+/* harmony import */ var _tests0_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./tests0.js */ "./Resources/assets/js-phpcat/components/tests0.js");
 /* harmony import */ var _TestsForm_vue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TestsForm.vue */ "./Resources/assets/js-phpcat/components/TestsForm.vue");
 
 
@@ -24508,7 +24460,7 @@ dayjs__WEBPACK_IMPORTED_MODULE_1___default().locale("ru");
     return {};
   },
   setup: function setup(props) {
-    var _tests = (0,_tests_ts__WEBPACK_IMPORTED_MODULE_2__["default"])(),
+    var _tests = (0,_tests0_js__WEBPACK_IMPORTED_MODULE_2__["default"])(),
       getI = _tests.getI,
       data = _tests.data,
       loading = _tests.loading,
@@ -24523,7 +24475,7 @@ dayjs__WEBPACK_IMPORTED_MODULE_1___default().locale("ru");
   },
   methods: {
     deleteItem: function deleteItem(item_id) {
-      var _tests2 = (0,_tests_ts__WEBPACK_IMPORTED_MODULE_2__["default"])(),
+      var _tests2 = (0,_tests0_js__WEBPACK_IMPORTED_MODULE_2__["default"])(),
         deleteI = _tests2.deleteI;
       console.log("deleteI(item_id) {", item_id);
       deleteI(item_id);
@@ -24556,7 +24508,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _tests_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tests.ts */ "./Resources/assets/js-phpcat/components/tests.ts");
+/* harmony import */ var _tests0_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./tests0.js */ "./Resources/assets/js-phpcat/components/tests0.js");
 
 // import sendTelegramm from "./../use/sendTelegramm.ts";
 
@@ -24615,7 +24567,7 @@ __webpack_require__.r(__webpack_exports__);
       this.result = false;
       //   console.log(2222, this.head, this.date, this.text , this.attachment , this.link );
 
-      var _tests = (0,_tests_ts__WEBPACK_IMPORTED_MODULE_1__["default"])(),
+      var _tests = (0,_tests0_js__WEBPACK_IMPORTED_MODULE_1__["default"])(),
         addI = _tests.addI,
         getI = _tests.getI;
       this.result = addI(this.head, this.date, this.text, this.code, this.link1, this.link2, this.link3);

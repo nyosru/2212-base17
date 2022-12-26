@@ -80,7 +80,7 @@ import { onMounted } from "vue";
 // import sendTelegramm from "./../use/sendTelegramm.ts";
 
 import dayjs from "dayjs";
-import news from "./news.ts";
+import news from "./news.js";
 
 import newsForm from "./NewsForm.vue";
 

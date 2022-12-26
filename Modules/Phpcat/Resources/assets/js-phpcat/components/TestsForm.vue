@@ -77,7 +77,7 @@ import { ref } from "vue";
 // import sendTelegramm from "./../use/sendTelegramm.ts";
 
 // import dayjs from "dayjs";
-import tests from "./tests.ts";
+import tests from "./tests0.js";
 
 // require("dayjs/locale/ru");
 // dayjs.locale("ru");

@@ -3,69 +3,39 @@ import md5 from 'md5'
 
 import axios from "axios";
 
-
-
-const news_data = ref({});
+const data = ref({});
 const loading = ref(true);
-const errored = ref('');
+const errored = ref(false);
 
 // const sended = ref(false);
 
-const getNews = async () => {
+const getI = async() => {
 
     let res = await axios
-        // await axios
-        .get('/api/news'
-            // ,
-            //     {
-            //         domain: window.location.hostname,
-            //         // show_datain: 1,
-            //         answer: 'json',
+        .get('/api/phpcat/tests')
+        .then((res) => {
+            data.value = res.data.data;
 
-            //         // s: md5('1'),
-            //         s: md5(window.location.hostname),
-
-            //         // id: 1,
-            //         id: [
-            //             360209578, // я
-            //             // 1368605419, // я тест
-            //             2037908418 // ваш метролог
-            //         ],
-            //         msg
-            //     }
-        )
+            if (data.value.length > 0) {
+                loading.value = false;
+            }
+        })
         .catch((error) => {
             console.log("error", error);
-            return 'errored';
+            errored.value = true
+                // return 'errored';
         });
-
-    news_data.value = await res.data.result;
-
-    if (news_data.value.length > 0) {
-        loading.value = false;
-    }
-
-    // console.log('fff',res);
-
-    //     if (res.data.res === true) {
-    //         loading.value = true;
-    //         data.value = true;
-    //         return 'sended';
-    //     } else {
-    //         errored.value = true;
-    //         return 'errored';
-    //     }
 
 }
 
 
-const deleteItem = async (id) => {
+const deleteI = async(id) => {
 
-    let res = await axios.delete('/api/news/' + id)
+    let res = await axios.delete('/api/tests/' + id)
         .then(
             response => {
                 console.log(response.data.message)
-                getNews()
+                getI()
             }
         )
         .catch(error => console.log(error))
@@ -76,7 +46,7 @@ const deleteItem = async (id) => {
 }
 
 
-const addNews = async (head, date, text, file = '', link = '') => {
+const addI = async(head, date, text, code = '', link1 = '', link2 = '', link3 = '') => {
 
 
     const config = { 'content-type': 'multipart/form-data' }
@@ -84,14 +54,15 @@ const addNews = async (head, date, text, file = '', link = '') => {
     formData.append('head', head)
     formData.append('date', date)
     formData.append('text', text)
-    if (file != '') {
-        formData.append('attachment', file)
-    }
-    if (link != '') {
-        formData.append('link', link)
-    }
+    formData.append('code', code)
+        // if (file != '') {
+        //     formData.append('attachment', file)
+        // }
+    if (link1 != '') { formData.append('link1', link1) }
+    if (link2 != '') { formData.append('link2', link2) }
+    if (link3 != '') { formData.append('link3', link3) }
 
-    let res = await axios.post('/api/news', formData, config)
+    let res = await axios.post('/api/tests', formData, config)
         .then(response => console.log(response.data.message))
         .catch(error => console.log(error))
 
@@ -143,7 +114,7 @@ const addNews = async (head, date, text, file = '', link = '') => {
 }
 
 
-export default function news() {
+export default function tests() {
 
     //   const response = ref()
 
@@ -153,10 +124,10 @@ export default function news() {
     // }
 
     return {
-        deleteItem,
-        addNews,
-        news_data,
-        getNews,
+        addI,
+        getI,
+        deleteI,
+        data,
         errored,
         // news,
         // sendToTelegramm,

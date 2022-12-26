@@ -8,6 +8,7 @@
 
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/phpcat.css') }}"> --}}
+       <link rel="stylesheet" href="{{ asset('phpcat/css.css') }}">
 
     </head>
     <body>
@@ -16,6 +17,8 @@
 
     </body>
         {{-- Laravel Mix - JS File --}}
-        <script src="{{ mix('phpcat/app.js') }}"></script>
+        {{-- <script src="{{ mix('phpcat/app.js') }}"></script> --}}
+        {{-- <script src="{{ mix('phpcat/app.js') }}"></script> --}}
+        <script src="{{ asset('phpcat/app.js') }}"></script>
         {{-- <script src="{{ asset('Modules/phpcat/public/phpcat77/js.js') }}"></script> --}}
 </html>

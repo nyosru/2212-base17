@@ -40,7 +40,7 @@ import { ref } from "vue";
 // import sendTelegramm from "./../use/sendTelegramm.ts";
 
 // import dayjs from "dayjs";
-import news from "./news.ts";
+import news from "./news.js";
 
 // require("dayjs/locale/ru");
 // dayjs.locale("ru");

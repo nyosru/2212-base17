@@ -76,7 +76,8 @@
 import { onMounted } from "vue";
 
 import dayjs from "dayjs";
-import tests from "./tests.ts";
+
+import tests from "./tests0.js";
 
 import testsForm from "./TestsForm.vue";
 

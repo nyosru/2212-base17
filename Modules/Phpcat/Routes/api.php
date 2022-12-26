@@ -1,18 +1,15 @@
 <?php
 
 use Illuminate\Http\Request;
+use Modules\Phpcat\Entities\PhpcatNews as EntitiesPhpcatNews;
+use Modules\Phpcat\Entities\PhpcatTest;
+use Modules\Phpcat\Transformers\PhpcatNewsResource;
+use Modules\Phpcat\Transformers\PhpcatTestResource;
 
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| is assigned the "api" middleware group. Enjoy building your API!
-|
-*/
+Route::get('/phpcat/news', function (Request $request) {
+    return new PhpcatNewsResource( EntitiesPhpcatNews::all()->sortByDesc('date') );
+});
 
-Route::middleware('auth:api')->get('/phpcat', function (Request $request) {
-    return $request->user();
+Route::get('/phpcat/tests', function (Request $request) {
+    return new PhpcatTestResource( PhpcatTest::all()->sortByDesc('date') );
 });
