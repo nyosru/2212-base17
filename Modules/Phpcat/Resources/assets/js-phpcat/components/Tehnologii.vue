@@ -52,11 +52,11 @@ export default {
           class: 'cub',
         },
 
-        {
-          name: 'IPhone PO (swift)',
-          link: 'https://developer.apple.com/swift/',
-          img: '/phpcat/logo/swift.svg',
-        },
+        // {
+        //   name: 'IPhone PO (swift)',
+        //   link: 'https://developer.apple.com/swift/',
+        //   img: '/phpcat/logo/swift.svg',
+        // },
 
         {
           name: 'Swagger',
@@ -143,11 +143,11 @@ export default {
           img: '/phpcat/logo/js.svg',
           class: 'cub',
         },
-        {
-          name: 'NODE.js',
-          link: 'https://nodejs.org/en/',
-          img: '/phpcat/logo/nodejs.png',
-        },
+        // {
+        //   name: 'NODE.js',
+        //   link: 'https://nodejs.org/en/',
+        //   img: '/phpcat/logo/nodejs.png',
+        // },
 
         {
           name: 'CSS',
@@ -166,15 +166,20 @@ export default {
           img: '/phpcat/logo/Bootstrap.svg',
         },
         {
+          name: 'Vuetify',
+          link: 'https://next.vuetifyjs.com',
+          img: '/phpcat/logo/vuetify.svg',
+        },
+        {
           name: 'API REST',
           link: 'https://ru.wikipedia.org/wiki/API',
           img: '/phpcat/logo/api_rest.png',
         },
-        {
-          name: 'Bitrix24',
-          link: 'https://www.bitrix24.ru',
-          img: '/phpcat/logo/bitrix.png',
-        },
+        // {
+        //   name: 'Bitrix24',
+        //   link: 'https://www.bitrix24.ru',
+        //   img: '/phpcat/logo/bitrix.png',
+        // },
       ],
 
       // " alt="MySql" border="1">
