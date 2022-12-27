@@ -1,0 +1,13 @@
+{
+    "name": "Ttt",
+    "alias": "ttt",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Ttt\\Providers\\TttServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -2,9 +2,11 @@
 
 @section('content')
     <div id="app">
-       
-        <div class="loader text-center" v-if="1==2" style="text-align:center;height: 100vh; padding-top: 20vh;">
-            <h1><span style="background-color: yellow; padding: 5px;">Норм программирование!!</span>
+
+        <div class="loader text-center" v-if="1==2"
+            style="text-align:center;height: 100vh; padding-top: 20vh;font-family: Tahoma;"">
+            <h1 style="font-weight: normal;"><span style="background-color: yellow; padding: 5px;">Норм
+                    программирование!!</span>
                 <br /><br /><br />
                 PHP-CAT
                 <br />

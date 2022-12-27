@@ -13,5 +13,7 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
-/Modules/Phpcat/node_modules/
+Modules/Phpcat/node_modules/
 Modules/Bill/node_modules/
+Modules/Ttt/node_modules/
+public/ttt/
