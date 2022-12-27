@@ -10,6 +10,7 @@
 
     {{-- Laravel Mix - CSS File --}}
     {{-- <link rel="stylesheet" href="{{ mix('storage/bill/css.css') }}"> --}}
+    <link rel="stylesheet" href="{{ asset('/bill/css.css') }}">
 
 </head>
 
