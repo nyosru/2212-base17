@@ -61,7 +61,7 @@ jobs:
           script: |
             cd www 
             cd ${{ secrets.FOLDER_DEV }} 
-            npm run dev
+            npm i && npm run dev
 
       # - name: setup npm
       #   uses: appleboy/ssh-action@master
