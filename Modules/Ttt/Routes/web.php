@@ -9,6 +9,8 @@ $appRoutes = function() {
 };
 
 // Route::group(array('domain' => 'php-cat.com'), $appRoutes);
+// ттт72.рф
+Route::group(array('domain' => 'xn--72-qmcaa.xn--p1ai'), $appRoutes);
 Route::group(array('domain' => 'ttt.17.ru'), $appRoutes);
 // Route::group(array('domain' => 'phpcat.base17.php-cat.com'), $appRoutes);
 
