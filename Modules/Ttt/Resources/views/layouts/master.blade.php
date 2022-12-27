@@ -30,7 +30,7 @@
     {{-- Laravel Mix - JS File --}}
     {{-- <script src="{{ mix('js/ttt.js') }}"></script> --}}
 </body>
-<script src="{{ asset('ttt/app.js') }}"></script>
+<script src="{{ asset('ttt/app.js') }}?271220222210"></script>
 {{-- <script src="./TW-ELEMENTS-PATH/dist/js/index.min.js"></script> --}}
 
 </html>
