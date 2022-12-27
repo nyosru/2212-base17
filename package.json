@@ -9,6 +9,10 @@
         "prod": "npm run production",
         "production": "mix --production"
     },
-    "devDependencies": {},
-    "dependencies": {}
+    "dependencies": {
+        "laravel-mix": "^6.0.49"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.20.2"
+    }
 }
