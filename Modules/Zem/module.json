@@ -1,0 +1,13 @@
+{
+    "name": "Zem",
+    "alias": "zem",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Zem\\Providers\\ZemServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

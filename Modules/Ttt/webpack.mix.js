@@ -15,7 +15,7 @@ mix
     )
     .vue({ version: 3 })
     .css(
-        __dirname + '/Resources/assets/app.css',
+        __dirname + '/Resources/assets/css/app.css',
         __dirname + '/Resources/assets/to-public-ttt/css.css', [require('tailwindcss')],
     )
     .sourceMaps()
