@@ -11,6 +11,6 @@ $appRoutes = function() {
 // ттт72.рф
 // Route::group(array('domain' => 'xn--72-qmcaa.xn--p1ai'), $appRoutes);
 // земельныйкадастр.рф
-Route::group(array('domain' => 'xn-- -8sbapdamsjijo8bnp1lpa.xn--p1ai'), $appRoutes);
+Route::group(array('domain' => 'xn--80aalcakqihin5bmo2koa.xn--p1ai'), $appRoutes);
 Route::group(array('domain' => 'zem.17.ru'), $appRoutes);
 // Route::group(array('domain' => 'phpcat.base17.php-cat.com'), $appRoutes);
