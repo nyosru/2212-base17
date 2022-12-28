@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BackwordController;
 use Illuminate\Http\Request;
 
 /*
@@ -13,6 +14,8 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/ttt', function (Request $request) {
-    return $request->user();
-});
+// Route::middleware('auth:api')->get('/ttt', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::post('ttt/sendMsg', [BackwordController::class, 'sendMsg']);

@@ -16,7 +16,9 @@
     </div> -->
     <block-start />
     <!-- <1app-footer /> -->
-    <block-news />
+    
+    
+    <!-- <block-news /> -->
     
     <block-price />
     
@@ -37,6 +39,7 @@ import BlockPrice from './view/blocks/20Price.vue'
 // import UpHeader2 from './view/UpHeader2.vue'
 // import UpHeaderMenu from './view/UpHeaderMenu.vue'
 // import AppFooter from './view/app/Footer.vue'
+
 </script>
 
 <style scoped>

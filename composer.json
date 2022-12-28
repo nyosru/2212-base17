@@ -16,7 +16,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "nwidart/laravel-modules": "^8.3",
-        "nyos/msg": "^1.12",
+        "nyos/msg": "^1.15",
         "socialiteproviders/vkontakte": "^5.0"
     },
     "require-dev": {

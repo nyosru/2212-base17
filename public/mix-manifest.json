@@ -1,7 +1,9 @@
 {
     "/ttt/app.js": "/ttt/app.js",
     "/ttt/app.js.LICENSE.txt": "/ttt/app.js.LICENSE.txt",
+    "/ttt/app.js.map": "/ttt/app.js.map",
     "/ttt/css.css": "/ttt/css.css",
+    "/ttt/css.css.map": "/ttt/css.css.map",
     "/ttt/img/ab.jpg": "/ttt/img/ab.jpg",
     "/ttt/img/stols.jpg": "/ttt/img/stols.jpg",
     "/ttt/img/stols2.jpg": "/ttt/img/stols2.jpg"

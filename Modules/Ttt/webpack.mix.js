@@ -10,17 +10,19 @@ const mix = require('laravel-mix')
 mix
     .js(
         __dirname + '/Resources/assets/js/app.js',
-        '/Modules/Ttt/Resources/assets/to-public-ttt/app.js',
+        __dirname + '/Resources/assets/to-public-ttt/app.js',
+        // __dirname + '/../../Resources/assets/to-public-ttt/app.js',
     )
     .vue({ version: 3 })
     .css(
         __dirname + '/Resources/assets/app.css',
         __dirname + '/Resources/assets/to-public-ttt/css.css', [require('tailwindcss')],
     )
+    .sourceMaps()
     // .sass(__dirname + '/Resources/assets/sass/app.scss', 'ttt/css.css')
 
 // mix.copy(__dirname + '/Resources/assets/img', __dirname + '/Resources/assets/to-public-ttt/img');
 
-if (mix.inProduction()) {
-    mix.version()
-}
+// if (mix.inProduction()) {
+//     mix.version()
+// }

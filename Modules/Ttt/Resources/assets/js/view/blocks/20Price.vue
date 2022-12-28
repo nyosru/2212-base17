@@ -17,16 +17,17 @@
                 Обучение игре в бильярд
               </h2>
               <p class="text-gray-500 mb-6 pr-4 pb-2">
-                Уровень своей игры можно хорошо поднять с&nbsp;помощью
-                как серии уроков так и&nbsp;парочки (чтобы закрепить знания и&nbsp;навыки)
-                <br/>
-                <br/>
-                Отправте свой телефон, позвоним расскажем о&nbsp;порядке и&nbsp;сроках
-                обучения
+                Уровень своей игры можно хорошо поднять с&nbsp;помощью как серии
+                уроков так и&nbsp;парочки (чтобы закрепить знания и&nbsp;навыки)
+                <br />
+                <br />
+                Отправте свой телефон, позвоним расскажем о&nbsp;порядке
+                и&nbsp;сроках обучения
                 <br />
                 <br />
                 Первый урок: 1`000 ₽
               </p>
+
               <div v-if="1 == 2" class="flex flex-wrap mb-6">
                 <div class="w-full md:w-4/12 mb-4">
                   <p class="flex items-center justify-center lg:justify-start">
@@ -126,23 +127,35 @@
                 </div>
               </div>
 
-              <div class="text-center">
+              <div class="text-center" v-if="sended == false">
                 <input
                   type="text"
                   class="form-control inline-block xw-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                   id="exampleFormControlInput3"
                   placeholder="Ваш телефон"
+                  v-model="phone"
                 />
-
+                00-{{ phone }}-00
                 <button
                   type="button"
                   xclass="inline-block px-7 py-3 bg-red-800 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out"
                   class="inline-block px-7 pt-3 pb-2 bg-red-600 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out"
                   data-mdb-ripple="true"
                   data-mdb-ripple-color="light"
+                  @click="sendForm1"
                 >
                   Записаться
                 </button>
+              </div>
+
+              <div class="text-center" v-else>
+
+                <div class="text-center" v-if="!loaded">
+                  ... Отправляю ...
+                </div>
+                <div class="text-center" v-else="loaded">
+                  ✅ Отправлено !
+                </div>
               </div>
             </div>
           </div>
@@ -163,9 +176,15 @@
 </template>
 
 <script setup>
-// import { ref } from 'vue'
+import { ref } from 'vue'
 // import axios from 'axios'
 // import NewsItem from './10NewsItem.vue'
+
+import FormReg from './FormReg.js'
+
+const sended = ref(false)
+
+const phone = ref('')
 
 // // let $news = [
 // //   {
@@ -184,6 +203,32 @@
 //   news.value = response
 //   news_loading.value = false
 // })
+
+// const sendForm = () => {
+//   console.log('2222+' + phone.value)
+// }
+
+const sendForm1 = async () => {
+  sended.value = true
+  let ar = {
+    phone: phone.value,
+    // phone: bw_phone.value,
+    // socweb: bw_socweb.value,
+    // predlogau: bw_predlogau.value,
+  }
+  // console.log( 'loading1',loading.value);
+  // console.log( 'loaded1',loaded.value);
+  let ee = await sendForm('Форма: обучение бильярду', ar)
+  console.log('ee', ee)
+  // console.log( 'loading2',loading.value);
+  // console.log( 'loaded2',loaded.value);
+}
+
+// const fio = ref('')
+// const phone = ref('')
+// const socweb = ref('')
+// const predlogau = ref('')
+const { loading, sendForm, loadError, loaded, form_now } = FormReg()
 </script>
 
 <style scoped></style>
