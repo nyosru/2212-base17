@@ -1,7 +1,8 @@
 <template>
   <div>
     <!-- Section: Design Block -->
-    <section class="mb-40">
+    asdasda
+    <section class="mb-40" v-if="1==2">
       <nav
         class="navbar navbar-expand-lg shadow-md py-2 bg-white relative flex items-center w-full justify-between"
       >

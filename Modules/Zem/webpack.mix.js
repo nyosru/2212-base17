@@ -16,7 +16,7 @@ mix
     .vue({ version: 3 })
     .css(
         __dirname + '/Resources/assets/css/app.css',
-        __dirname + '/Resources/assets/to-public-zem/css.css', [require('tailwindcss')],
+        __dirname + '/Resources/assets/to-public-zem/app.css', [require('tailwindcss')],
     )
     .sourceMaps()
     // .sass(__dirname + '/Resources/assets/sass/app.scss', 'ttt/css.css')
@@ -27,5 +27,5 @@ mix
 if (mix.inProduction()) {
     //     mix.version()
 } else {
-    mix.copy(__dirname + '/Resources/assets/to-public-zem/', '/public/zem/')
+    mix.copy(__dirname + '/Resources/assets/to-public-zem/', __dirname + '/../../public/zem/')
 }

@@ -6,7 +6,7 @@
     <p>
         This view is loaded from module: {!! config('ttt.name') !!}
     </p> --}}
-
+11
     <div id="app"></div>
-
+22
 @endsection

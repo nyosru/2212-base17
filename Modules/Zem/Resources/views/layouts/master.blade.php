@@ -5,17 +5,16 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Школа бильярда Александра Коновалова ттт72.рф Тюмень</title>
+    <title>Земельный кадастр</title>
 
     {{-- Laravel Mix - CSS File --}}
     {{-- <link rel="stylesheet" href="{{ mix('css/ttt.css') }}"> --}}
 
     <meta name="csrf-token" value="{{ csrf_token() }}" />
 
-
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('zem/css.css') }}?{{ rand() }}">
+    <link rel="stylesheet" href="{{ asset('zem/app.css') }}?{{ rand() }}">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet"
@@ -25,8 +24,9 @@
 </head>
 
 <body>
+    123123123
     @yield('content')
-
+234234
     {{-- Laravel Mix - JS File --}}
     {{-- <script src="{{ mix('js/ttt.js') }}"></script> --}}
 </body>

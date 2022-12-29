@@ -16,13 +16,15 @@ mix
     .vue({ version: 3 })
     .css(
         __dirname + '/Resources/assets/css/app.css',
-        __dirname + '/Resources/assets/to-public-ttt/css.css', [require('tailwindcss')],
+        __dirname + '/Resources/assets/to-public-ttt/app.css', [require('tailwindcss')],
     )
     .sourceMaps()
     // .sass(__dirname + '/Resources/assets/sass/app.scss', 'ttt/css.css')
 
 // mix.copy(__dirname + '/Resources/assets/img', __dirname + '/Resources/assets/to-public-ttt/img');
 
-// if (mix.inProduction()) {
-//     mix.version()
-// }
+if (mix.inProduction()) {
+    //     mix.version()
+} else {
+    mix.copy(__dirname + '/Resources/assets/to-public-ttt/', __dirname + '/../../public/ttt/')
+}

@@ -1,5 +1,7 @@
 <template>
   <div>
+    22200
+    <!-- <header-app /> -->
     <!-- <up-header /> -->
     <!-- <1up-header-2 /> -->
     <!-- <1up-header-menu /> -->
@@ -15,19 +17,21 @@
       </div>
     </div> -->
     1111
-    <block-start />
+    <!-- <block-start /> -->
     <!-- <1app-footer /> -->
-    
-    
+
     <!-- <block-news /> -->
-    
+
     <!-- <block-price /> -->
-    33333
+    <!-- 33333 -->
     <!-- <block-form-submit /> -->
+    <!-- <footer-app /> -->
   </div>
 </template>
 
 <script setup>
+import HeaderApp from './view/app/Header.vue'
+import FooterApp from './view/app/Footer.vue'
 
 // import UpHeader from './view/UpHeadMenu.vue'
 
@@ -40,11 +44,10 @@ import BlockStart from './view/blocks/00Start.vue'
 // import UpHeader2 from './view/UpHeader2.vue'
 // import UpHeaderMenu from './view/UpHeaderMenu.vue'
 // import AppFooter from './view/app/Footer.vue'
-
 </script>
 
 <style scoped>
-h1{
+h1 {
   font-size: 10px;
 }
 </style>

@@ -1,6 +1,10 @@
 {
     "/Resources/assets/to-public-zem/app.js": "/Resources/assets/to-public-zem/app.js",
-    "/Resources/assets/to-public-zem/css.css": "/Resources/assets/to-public-zem/css.css",
+    "/Resources/assets/to-public-zem/app.css": "/Resources/assets/to-public-zem/app.css",
+    "/public/zem/app.css": "/public/zem/app.css",
     "/public/zem/app.js": "/public/zem/app.js",
-    "/public/zem/css.css": "/public/zem/css.css"
+    "/public/zem/app.js.LICENSE.txt": "/public/zem/app.js.LICENSE.txt",
+    "/public/zem/app.js.map": "/public/zem/app.js.map",
+    "/public/zem/css.css": "/public/zem/css.css",
+    "/public/zem/css.css.map": "/public/zem/css.css.map"
 }

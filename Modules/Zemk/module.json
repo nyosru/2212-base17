@@ -1,0 +1,13 @@
+{
+    "name": "Zemk",
+    "alias": "zemk",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Zemk\\Providers\\ZemkServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}
