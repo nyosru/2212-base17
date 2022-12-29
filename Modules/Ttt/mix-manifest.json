@@ -1,13 +1,4 @@
 {
     "/Resources/assets/to-public-ttt/app.js": "/Resources/assets/to-public-ttt/app.js",
-    "/Resources/assets/to-public-ttt/app.css": "/Resources/assets/to-public-ttt/app.css",
-    "/public/ttt/app.css": "/public/ttt/app.css",
-    "/public/ttt/app.js": "/public/ttt/app.js",
-    "/public/ttt/app.js.LICENSE.txt": "/public/ttt/app.js.LICENSE.txt",
-    "/public/ttt/app.js.map": "/public/ttt/app.js.map",
-    "/public/ttt/css.css": "/public/ttt/css.css",
-    "/public/ttt/css.css.map": "/public/ttt/css.css.map",
-    "/public/ttt/img/ab.jpg": "/public/ttt/img/ab.jpg",
-    "/public/ttt/img/stols.jpg": "/public/ttt/img/stols.jpg",
-    "/public/ttt/img/stols2.jpg": "/public/ttt/img/stols2.jpg"
+    "/Resources/assets/to-public-ttt/app.css": "/Resources/assets/to-public-ttt/app.css"
 }
