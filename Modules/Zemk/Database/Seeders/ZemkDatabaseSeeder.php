@@ -4,6 +4,7 @@ namespace Modules\Zemk\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Zemk\Database\Seeders\NewsTableSeeder;
 
 class ZemkDatabaseSeeder extends Seeder
 {
@@ -16,6 +17,8 @@ class ZemkDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-        // $this->call("OthersTableSeeder");
+        $this->call(
+            NewsTableSeeder::class
+        );
     }
 }

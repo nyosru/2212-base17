@@ -5,6 +5,7 @@ namespace Modules\Zemk\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Modules\Zemk\Entities\ZemkNews;
 
 class ZemkController extends Controller
 {
@@ -14,6 +15,10 @@ class ZemkController extends Controller
      */
     public function index()
     {
+
+        // $ee = ZemkNews::limit(10)->with('author')->get();
+        // dd($ee->toArray());
+
         return view('zemk::index');
     }
 

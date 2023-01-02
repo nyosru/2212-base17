@@ -2,6 +2,12 @@
   <div>
     <header-app />
     <up-menu />
+
+    <!-- <router-view></router-view> -->
+    <router-view name="pageBody"></router-view>
+
+    <!-- <news-component /> -->
+
     <!-- <up-header /> -->
     <!-- <1up-header-2 /> -->
     <!-- <1up-header-menu /> -->
@@ -33,15 +39,15 @@ import FooterApp from './view/app/Footer.vue'
 // import UpHeader from './view/UpHeadMenu.vue'
 
 import UpMenu from './view/blocks/00UpMenu.vue'
-import BlockStart from './view/blocks/00Start.vue'
-// import BlockNews from './view/blocks/10News.vue'
-// import BlockPrice from './view/blocks/20Price.vue'
-// import BlockFormSubmit from './view/blocks/05FormSubmit.vue'
+// import BlockStart from './view/blocks/00Start.vue'
+// import NewsComponent from './view/blocks/10NewsListComponent.vue'
+// // import BlockPrice from './view/blocks/20Price.vue'
+// // import BlockFormSubmit from './view/blocks/05FormSubmit.vue'
 
-// import UpHeader from './view/UpHeader.vue'
-// import UpHeader2 from './view/UpHeader2.vue'
-// import UpHeaderMenu from './view/UpHeaderMenu.vue'
-// import AppFooter from './view/app/Footer.vue'
+// // import UpHeader from './view/UpHeader.vue'
+// // import UpHeader2 from './view/UpHeader2.vue'
+// // import UpHeaderMenu from './view/UpHeaderMenu.vue'
+// // import AppFooter from './view/app/Footer.vue'
 </script>
 
 <style scoped>

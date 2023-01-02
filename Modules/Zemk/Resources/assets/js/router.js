@@ -1,19 +1,41 @@
-import AllPosts from './components/AllPosts.vue'
-import AddPost from './components/AddPost.vue'
-import EditPost from './components/EditPost.vue'
+// import AllPosts from './components/AllPosts.vue'
+// import AddPost from './components/AddPost.vue'
+// import EditPost from './components/EditPost.vue'
+
+import NewsListComponent from './view/blocks/10NewsListComponent.vue'
+import NewsReadComponent from './view/blocks/11NewsReadComponent.vue'
+
 export const routes = [{
         name: 'home',
         path: '/',
-        component: AllPosts,
+        components: {
+            // default: '',
+            pageBody: NewsListComponent
+        },
+    },
+    // {
+    //     name: 'add',
+    //     path: '/add',
+    //     component: AddPost,
+    // },
+    {
+        name: 'newsList',
+        path: '/news',
+        components: {
+            // default: '',
+            pageBody: NewsListComponent
+        },
+
     },
     {
-        name: 'add',
-        path: '/add',
-        component: AddPost,
+        name: 'newsRead',
+        //only be matched if :id is all numbers
+        path: '/news/:id(\\d+)',
+        components: {
+            // default: '',
+            pageBody: NewsReadComponent
+        },
+
     },
-    {
-        name: 'edit',
-        path: '/edit/:id',
-        component: EditPost,
-    },
+
 ]
