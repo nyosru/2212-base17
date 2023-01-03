@@ -20,7 +20,7 @@ export const routes = [{
     // },
     {
         name: 'newsList',
-        path: '/news',
+        path: '/news/:page(\\d+)?',
         components: {
             // default: '',
             pageBody: NewsListComponent
@@ -30,7 +30,7 @@ export const routes = [{
     {
         name: 'newsRead',
         //only be matched if :id is all numbers
-        path: '/news/:id(\\d+)',
+        path: '/news/read/:id(\\d+)',
         components: {
             // default: '',
             pageBody: NewsReadComponent

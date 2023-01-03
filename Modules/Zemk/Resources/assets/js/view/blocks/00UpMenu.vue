@@ -90,9 +90,9 @@
       <!-- </div> -->
     </nav>
 
-    steps: {{ steps }}
+    <!-- steps: {{ steps }} -->
 
-    <nav class="rounded-md w-full ml-5 pl-10 py-5">
+    <nav class="rounded-md w-full mx-10 pl-10 py-5">
       <ol class="list-reset flex">
         <template v-for="(s,i) in steps" :key="s.name">
           <li>

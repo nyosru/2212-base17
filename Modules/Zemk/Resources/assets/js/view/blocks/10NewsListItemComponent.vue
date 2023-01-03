@@ -3,26 +3,28 @@
     <div v-if="1 == 1" class="mb-6 lg:mb-0">
       <div class="relative block bg-white rounded-lg shadow-lg">
         <div class="flex">
-          <div
-            class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
-            data-mdb-ripple="true"
-            data-mdb-ripple-color="light"
-          >
-            <img
-              xsrc="https://mdbcdn.b-cdn.net/img/new/standard/city/024.webp"
-              src="http://placekitten.com/g/400/120"
-              class="w-full"
-            />
-            <!-- <a href="#!"> -->
+          <router-link :to="'/news/read/' + item.id">
             <div
-              class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
-              style="background-color: rgba(255, 255, 255, 0.15);"
-            ></div>
-            <!-- </a> -->
-          </div>
+              class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
+              data-mdb-ripple="true"
+              data-mdb-ripple-color="light"
+            >
+              <img
+                xsrc="https://mdbcdn.b-cdn.net/img/new/standard/city/024.webp"
+                src="http://placekitten.com/g/400/120"
+                class="w-full"
+              />
+              <!-- <a href="#!"> -->
+              <div
+                class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                style="background-color: rgba(255, 255, 255, 0.15);"
+              ></div>
+              <!-- </a> -->
+            </div>
+          </router-link>
         </div>
         <div class="p-6">
-          <router-link :to="'/news/' + item.id">
+          <router-link :to="'/news/read/' + item.id">
             <h5 class="font-bold text-lg mb-3">{{ item.head }}</h5>
             <p class="text-gray-500 mb-4">
               <small>
