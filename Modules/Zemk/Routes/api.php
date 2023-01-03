@@ -2,10 +2,13 @@
 
 use Illuminate\Http\Request;
 use Modules\Zemk\Entities\ZemkNews;
+use Modules\Zemk\Entities\ZemkUslugi;
 use Modules\Zemk\Transformers\ZemkNewsCollection;
 use Modules\Zemk\Transformers\ZemkNewsFullCollection;
 use Modules\Zemk\Transformers\ZemkNewsFullResource;
 use Modules\Zemk\Transformers\ZemkNewsResource;
+use Modules\Zemk\Transformers\ZemkUslugiCollection;
+use Modules\Zemk\Transformers\ZemkUslugiResource;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,6 +34,11 @@ $appRoutes1 = function () {
 
     Route::get('/zemk/news', function (Request $request) {
         return new ZemkNewsCollection(ZemkNews::with('author')->orderBy('date', 'desc')->paginate(3));
+    });
+
+    Route::get('/zemk/uslugi', function (Request $request) {
+        // return new ZemkNewsCollection(ZemkNews::with('author')->orderBy('date', 'desc')->paginate(3));
+        return new ZemkUslugiCollection(ZemkUslugi::all()->sortByDesc('sort'));
     });
 
 };

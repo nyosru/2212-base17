@@ -16,7 +16,7 @@ class ZemkNewsTableSeeder extends Seeder
      */
     public function run()
     {
-        // Model::unguard();
+        Model::unguard();
         // $this->call("OthersTableSeeder");
         // ZemkNews::factory()->count(50)->create();
         // DB::table('users')->insert([
@@ -24,6 +24,6 @@ class ZemkNewsTableSeeder extends Seeder
         //     'email' => Str::random(10).'@gmail.com',
         //     // 'password' => Hash::make('password'),
         // ]);
-        ZemkNews::factory()->count(500)->create();
+        ZemkNews::factory()->count(50)->create();
     }
 }

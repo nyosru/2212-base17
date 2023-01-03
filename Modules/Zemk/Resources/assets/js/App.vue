@@ -4,6 +4,9 @@
     <up-menu />
 
     <!-- <router-view></router-view> -->
+    <router-view name="pageCallToAction1"></router-view>
+    <router-view name="pageUslugi"></router-view>
+    <router-view name="pageCallToAction2"></router-view>
     <router-view name="pageBody"></router-view>
 
     <!-- <news-component /> -->
