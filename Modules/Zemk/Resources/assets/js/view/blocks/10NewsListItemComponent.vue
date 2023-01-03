@@ -35,7 +35,7 @@
                     {{ item.author_website }}
                   </a>
                 </span>
-                <span v-else>от {{ item.author_name }}</span>
+                <span v-else> от {{ item.author_name }}</span>
                 <!-- от            <a href="//gosuslugi.ru" target="_blank" class="text-gray-900">гос сайт</a> -->
               </small>
             </p>
