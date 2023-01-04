@@ -13,10 +13,10 @@ export const routes = [{
         path: '/',
         components: {
             // default: '',
-            pageCallToAction1: pageCallToAction1,
-            // pageUslugi: UslugiComponent,
-            pageCallToAction2: pageCallToAction2,
-            pageBody: NewsListComponent,
+            // callToAction1: pageCallToAction1,
+            uslugi: UslugiComponent,
+            // callToAction2: pageCallToAction2,
+            // body: NewsListComponent,
         },
     },
     // {

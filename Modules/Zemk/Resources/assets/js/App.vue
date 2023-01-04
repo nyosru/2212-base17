@@ -4,10 +4,10 @@
     <up-menu />
 
     <!-- <router-view></router-view> -->
-    <router-view name="pageCallToAction1"></router-view>
-    <router-view name="pageUslugi"></router-view>
-    <router-view name="pageCallToAction2"></router-view>
-    <router-view name="pageBody"></router-view>
+    <router-view name="callToAction1"></router-view>
+    <router-view name="uslugi"></router-view>
+    <router-view name="callToAction2"></router-view>
+    <router-view name="body"></router-view>
 
     <!-- <news-component /> -->
 

@@ -51,16 +51,19 @@
 // import axios from 'axios'
 // import ItemComponent from './07UslugiItemComponent.vue'
 
+import FnNumeric from './../../use/FnNumeric'
+const { randomInteger } = FnNumeric()
+
 // const data = ref({})
 // const rand_10_99 = ref({})
 // const loading = ref(true)
 // const errored = ref(false)
 
-function randomInteger(min, max) {
-  // получить случайное число от (min-0.5) до (max+0.5)
-  let rand = min - 0.5 + Math.random() * (max - min + 1);
-  return Math.round(rand);
-}
+// function randomInteger(min, max) {
+//   // получить случайное число от (min-0.5) до (max+0.5)
+//   let rand = min - 0.5 + Math.random() * (max - min + 1);
+//   return Math.round(rand);
+// }
 
 // const getData = () => {
 //   axios
