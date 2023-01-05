@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\ZemkDi\Http\Controllers\services;
+namespace Modules\ZemkDi\Http\Controllers\Services;
 
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
@@ -22,5 +22,5 @@ class SocEnterController extends Controller
         // dd( __LINE__, $e);
         return $userNow;
     }
-    
+
 }

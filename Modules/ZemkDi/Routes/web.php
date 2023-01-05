@@ -28,9 +28,6 @@ $appRoutes1 = function () {
 
     // Route::get('/', [DiController::class, 'index2'])->middleware('auth');
 
-
-
-
     // Route::get('/logout', function () {
     //     Auth::logout();
     //     return back();

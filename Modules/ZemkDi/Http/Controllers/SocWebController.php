@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 
 use Laravel\Socialite\Facades\Socialite;
-use Modules\ZemkDi\Http\Controllers\services\SocEnterController;
+use Modules\ZemkDi\Http\Controllers\Services\SocEnterController;
 
 use Illuminate\Support\Facades\Auth;
 use Nwidart\Modules\Module;
