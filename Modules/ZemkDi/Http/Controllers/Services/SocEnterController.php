@@ -11,6 +11,7 @@ use App\Models\User;
 
 class SocEnterController extends Controller
 {
+
     static public function enter($user)
     {
         $user['password'] = Hash::make(rand(0,99999));
@@ -21,4 +22,5 @@ class SocEnterController extends Controller
         // dd( __LINE__, $e);
         return $userNow;
     }
+    
 }
