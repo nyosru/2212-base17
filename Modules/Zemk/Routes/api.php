@@ -30,8 +30,8 @@ $appRoutes1 = function () {
     Route::get('/zemk/news/{id}', function ( $id ) {
         // return new ZemkNewsFullCollection(ZemkNews::where('id',$id)->paginate(0));
         return new ZemkNewsFullResource(ZemkNews::findOrFail($id));
-    })->whereNumber('id')->name('newsShow');
-
+    })->whereNumber('id')->name('zemk-newsShow');
+        
     Route::get('/zemk/news', function (Request $request) {
         return new ZemkNewsCollection(ZemkNews::with('author')->orderBy('date', 'desc')->paginate(3));
     });

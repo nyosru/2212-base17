@@ -1,0 +1,13 @@
+{
+    "name": "ZemkDi",
+    "alias": "zemkdi",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\ZemkDi\\Providers\\ZemkDiServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

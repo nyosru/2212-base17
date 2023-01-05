@@ -1,12 +1,12 @@
 <?php
 
-use App\Http\Controllers\CalculateCarStController;
+// use App\Http\Controllers\CalculateCarStController;
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\SocWebController;
-use Illuminate\Support\Facades\Auth;
+// use App\Http\Controllers\SocWebController;
+// use Illuminate\Support\Facades\Auth;
 
-// // Auth::routes();
+// Auth::routes();
 
 // // Route::get('/', [ CalculateCarStController::class , 'index' ] );
 // Route::any('/ss', [CalculateCarStController::class, 'index']);

@@ -1,4 +1,6 @@
 {
+    "/ttt/app.css": "/ttt/app.css",
+    "/ttt/app.css.map": "/ttt/app.css.map",
     "/ttt/app.js": "/ttt/app.js",
     "/ttt/app.js.LICENSE.txt": "/ttt/app.js.LICENSE.txt",
     "/ttt/app.js.map": "/ttt/app.js.map",
@@ -8,5 +10,8 @@
     "/ttt/img/stols.jpg": "/ttt/img/stols.jpg",
     "/ttt/img/stols2.jpg": "/ttt/img/stols2.jpg",
     "/zemk/app.css": "/zemk/app.css",
-    "/zemk/app.js": "/zemk/app.js"
+    "/zemk/app.css.map": "/zemk/app.css.map",
+    "/zemk/app.js": "/zemk/app.js",
+    "/zemk/app.js.LICENSE.txt": "/zemk/app.js.LICENSE.txt",
+    "/zemk/app.js.map": "/zemk/app.js.map"
 }

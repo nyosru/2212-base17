@@ -29,6 +29,7 @@ mix.copy('Modules/Ttt/Resources/assets/to-public-ttt/', 'public/ttt/')
     // mix.copy('Modules/Zem/Resources/assets/to-public-zem/', 'public/zem/')
 mix.copy('Modules/Zemk/Resources/assets/to-public-zemk/', 'public/zemk/')
     // /Users/phpcat/Documents/2212-base17/Modules/Ttt/Resources/assets/to-public-ttt
+mix.copy('Modules/ZemkDi/Resources/assets/to-public-zemkdi/', 'public/zemkdi/')
 
 // mix.js('resources/js/app.js', 'public/js')
 //     // .js('resources/phpcat/js/app.js', 'public/phpcat2/js')
