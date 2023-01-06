@@ -1,9 +1,4 @@
 {
     "/Resources/assets/to-public-zemk/app.js": "/Resources/assets/to-public-zemk/app.js",
-    "/Resources/assets/to-public-zemk/app.css": "/Resources/assets/to-public-zemk/app.css",
-    "/public/zemk/app.css": "/public/zemk/app.css",
-    "/public/zemk/app.css.map": "/public/zemk/app.css.map",
-    "/public/zemk/app.js": "/public/zemk/app.js",
-    "/public/zemk/app.js.LICENSE.txt": "/public/zemk/app.js.LICENSE.txt",
-    "/public/zemk/app.js.map": "/public/zemk/app.js.map"
+    "/Resources/assets/to-public-zemk/app.css": "/Resources/assets/to-public-zemk/app.css"
 }
