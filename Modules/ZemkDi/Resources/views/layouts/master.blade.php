@@ -40,6 +40,10 @@
         @endauth
     </style>
 
+    @auth
+    @yield('style')
+    @endauth
+
 </head>
 
 <body>
@@ -47,7 +51,7 @@
         @include('zemkdi::layouts/header')
 
         @auth
-            <div class="container">
+            <div class="container mx-auto">
             @yield('content')
             </div>
         @endauth

@@ -3,20 +3,21 @@
     <header-app />
     <up-menu />
 
-    <!-- <router-view></router-view> -->
-    <router-view name="callToAction1"></router-view>
-    <router-view name="uslugi"></router-view>
-    <router-view name="callToAction2"></router-view>
-    <router-view name="body"></router-view>
+    <div style="min-height: 70vh;">
+      <!-- <router-view></router-view> -->
+      <router-view name="callToAction1"></router-view>
+      <router-view name="uslugi"></router-view>
+      <router-view name="callToAction2"></router-view>
+      <router-view name="body"></router-view>
 
-    <!-- <news-component /> -->
+      <!-- <news-component /> -->
 
-    <!-- <up-header /> -->
-    <!-- <1up-header-2 /> -->
-    <!-- <1up-header-menu /> -->
-    <!-- <h1>222</h1> -->
-    <!-- 77777 -->
-    <!-- <div class="container mt-10 mx-auto" style="min-height:60vh;">
+      <!-- <up-header /> -->
+      <!-- <1up-header-2 /> -->
+      <!-- <1up-header-menu /> -->
+      <!-- <h1>222</h1> -->
+      <!-- 77777 -->
+      <!-- <div class="container mt-10 mx-auto" style="min-height:60vh;">
       <div class="flex flex-row w-full justify-around">
         <div class="basis-1/4">01</div>
         <div class="basis-1/4">02</div>
@@ -25,12 +26,13 @@
         <div class="basis-1/2">03</div>
       </div>
     </div> -->
-    <!-- <block-start /> -->
-    <!-- <1app-footer /> -->
-    <!-- <block-news /> -->
-    <!-- <block-price /> -->
-    <!-- 33333 -->
-    <!-- <block-form-submit /> -->
+      <!-- <block-start /> -->
+      <!-- <1app-footer /> -->
+      <!-- <block-news /> -->
+      <!-- <block-price /> -->
+      <!-- 33333 -->
+      <!-- <block-form-submit /> -->
+    </div>
     <footer-app />
   </div>
 </template>

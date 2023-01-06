@@ -96,6 +96,13 @@ class DiController extends Controller
         return view('zemkdi::index-images', $in);
     }
 
+    public function imagesPut( Request $r )
+    {
+
+dd($r);
+
+    }
+
     /**
      * Show the form for creating a new resource.
      * @return Renderable

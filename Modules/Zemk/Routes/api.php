@@ -2,11 +2,13 @@
 
 use Illuminate\Http\Request;
 use Modules\Zemk\Entities\ZemkNews;
+use Modules\Zemk\Entities\ZemkPage;
 use Modules\Zemk\Entities\ZemkUslugi;
 use Modules\Zemk\Transformers\ZemkNewsCollection;
 use Modules\Zemk\Transformers\ZemkNewsFullCollection;
 use Modules\Zemk\Transformers\ZemkNewsFullResource;
 use Modules\Zemk\Transformers\ZemkNewsResource;
+use Modules\Zemk\Transformers\ZemkPageResource;
 use Modules\Zemk\Transformers\ZemkUslugiCollection;
 use Modules\Zemk\Transformers\ZemkUslugiResource;
 
@@ -30,6 +32,13 @@ $appRoutes1 = function () {
     Route::get('/zemk/news/{id}', function ( $id ) {
         // return new ZemkNewsFullCollection(ZemkNews::where('id',$id)->paginate(0));
         return new ZemkNewsFullResource(ZemkNews::findOrFail($id));
+    })->whereNumber('id')->name('zemk-newsShow');
+        
+    Route::get('/zemk/page/{page}', function ( $page ) {
+        // return new ZemkNewsFullCollection(ZemkNews::where('id',$id)->paginate(0));
+        // return new ZemkNewsFullResource(ZemkNews::findOrFail($id));
+        return  new ZemkPageResource( ZemkPage::where('name_key',$page)->first() );
+        
     })->whereNumber('id')->name('zemk-newsShow');
         
     Route::get('/zemk/news', function (Request $request) {

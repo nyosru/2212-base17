@@ -2,6 +2,7 @@
 // import AddPost from './components/AddPost.vue'
 // import EditPost from './components/EditPost.vue'
 
+import PageComponent from './view/blocks/15PageComponent.vue'
 import NewsListComponent from './view/blocks/10NewsListComponent.vue'
 import NewsReadComponent from './view/blocks/11NewsReadComponent.vue'
 import UslugiComponent from './view/blocks/07UslugiComponent.vue'
@@ -25,11 +26,20 @@ export const routes = [{
     //     component: AddPost,
     // },
     {
+        name: 'pages',
+        path: '/page/:page',
+        components: {
+            // default: '',
+            body: PageComponent
+        },
+
+    },
+    {
         name: 'newsList',
         path: '/news/:page(\\d+)?',
         components: {
             // default: '',
-            pageBody: NewsListComponent
+            body: NewsListComponent
         },
 
     },
@@ -39,7 +49,7 @@ export const routes = [{
         path: '/news/read/:id(\\d+)',
         components: {
             // default: '',
-            pageBody: NewsReadComponent
+            body: NewsReadComponent
         },
 
     },

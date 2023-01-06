@@ -19,6 +19,8 @@ use Modules\ZemkDi\Http\Controllers\DiController;
 use Modules\ZemkDi\Http\Controllers\SocWebController;
 
 use Illuminate\Support\Facades\Auth;
+use Modules\ZemkDi\Http\Controllers\DiImageController;
+use Modules\ZemkDi\Http\Controllers\DiPageController;
 
 $appRoutes1 = function () {
     // Route::get('/', [ZemkController::class,'index']);
@@ -43,10 +45,27 @@ $appRoutes1 = function () {
 
 
     Route::middleware('auth')->group(function () {
+
+        // Route::resource('/service/images', DiImageController::class );
+        // форма загрузка картинки
+        Route::get('/service/images', [DiImageController::class, 'index'])->name('zemk-di-images');
+        // загрузка картинки, сохранение
+        Route::put('/service/images', [DiImageController::class, 'store'])->name('zemk-di-images-put');
+        // удаление
+        Route::post('/service/images/delete', [DiImageController::class, 'destroy'])->name('zemk-di-images-delete');
+        
+
+        // редактирование страницы
         Route::get('/page/{pageName}', [DiController::class, 'pageEditor'])->name('zemk-page');
+
+        // работа со страницами
+        // показать форму изменений
+        Route::get('/service/page/{pageName}', [DiPageController::class , 'index' ] )->name('zemk-di-page');
+        // изменить
+        Route::post('/service/page/{page_key}', [DiPageController::class , 'edit' ] )->name('zemk-di-page-edit');
+
     });
 
-    Route::get('/service/images', [DiController::class, 'images'])->name('zemk-di-images');
 
     Route::get('zemk/logout2', function (Request $request) {
         // Auth::logout();
@@ -55,7 +74,6 @@ $appRoutes1 = function () {
         // $request->session()->regenerateToken();
         return redirect('/');
     })->name('zemk-logout2');
-
 };
 
 // Route::group(array('domain' => 'php-cat.com'), $appRoutes);
