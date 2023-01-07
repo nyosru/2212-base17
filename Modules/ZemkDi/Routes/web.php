@@ -74,11 +74,11 @@ $appRoutes1 = function () {
 
 
                 // изменить
-                Route::get('{modName}/{id}/delete', [DiItemsController::class , 'destroy' ] )->name('zemk-di-items-one-save');
+                Route::get('{modName}/{id}/delete', [DiItemsController::class , 'destroy' ] )->name('zemk-di-items-one-delete');
 
                 // изменить
                 Route::post('{modName}/{id}/save', [DiItemsController::class , 'update' ] )->name('zemk-di-items-one-save');
-                
+
                 // работа с 1 итемом
                 Route::get('{modName}/{modId}/{modAction?}', [DiItemsController::class, 'indexOne'])->name('zemk-di-items-one');
 
