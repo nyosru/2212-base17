@@ -30,7 +30,8 @@
                 <h2 class="text-3xl font-bold mb-6">{{ i.head }}</h2>
 
                 <p class="text-gray-500 mb-6">
-                  {{ i.opis }}
+                  <!-- {{ i.opis }} -->
+                  <span v-html="i.opis"></span>
                 </p>
 
                 <!-- i: {{ i }} -->
