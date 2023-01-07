@@ -57,23 +57,29 @@
                                     <div class="bg-white text-gray-600">
                                         <p
                                             class="block px-6 py-2 border-b border-gray-200 w-full uppercase font-semibold text-gray-700">
-                                            Lorem ipsum</p>
+                                            Модули</p>
 
-                                        @yield('menu')
 
-                                        <a href="#!" aria-current="true"
+                                        <a href="/service/items/news" aria-current="true"
+                                            class="block px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">Amet
+                                            Новости</a>
+
+
+                                        {{-- @yield('menu') --}}
+
+                                        {{-- <a href="#!" aria-current="true"
                                             class="block px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">
                                             Dolor sit
-                                        </a>
-                                        <a href="#!" aria-current="true"
+                                        </a> --}}
+                                        {{-- <a href="#!" aria-current="true"
                                             class="block px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">Amet
-                                            consectetur</a>
-                                        <a href="#!" aria-current="true"
+                                            consectetur</a> --}}
+                                        {{-- <a href="#!" aria-current="true"
                                             class="block px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">Cras
-                                            justo odio</a>
-                                        <a href="#!" aria-current="true"
+                                            justo odio</a> --}}
+                                        {{-- <a href="#!" aria-current="true"
                                             class="block px-6 py-2 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">Adipisicing
-                                            elit</a>
+                                            elit</a> --}}
                                     </div>
                                     <div class="bg-white text-gray-600">
                                         <p
@@ -220,7 +226,8 @@
                         aria-labelledby="dropdownMenuButton2">
                         <li>
                             <a class="        dropdown-item        text-sm        py-2        px-4        font-normal        block        w-full        whitespace-nowrap        bg-transparent        text-gray-700        hover:bg-gray-100      "
-                                href="{{ route('zemk-logout2') }}">Выйти</a>
+                                {{-- href="{{ route('zemk-logout2') }}">Выйти</a> --}}
+                                href="/zemk/logout2">Выйти</a>
                         </li>
                         {{-- <li>
                             <a class="        dropdown-item        text-sm        py-2        px-4        font-normal        block        w-full        whitespace-nowrap        bg-transparent        text-gray-700        hover:bg-gray-100      "
@@ -234,7 +241,8 @@
                 </div>
             @else
                 {{-- если не авторизован --}}
-                <a href="{{ route('zemk-vk-enter') }}">войти</a>
+                {{-- <a href="{{ route('zemk-vk-enter') }}">войти</a> --}}
+                <a href="/vk/enter">войти</a>
             @endauth
 
         </div>

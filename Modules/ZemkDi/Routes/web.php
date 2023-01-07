@@ -20,6 +20,7 @@ use Modules\ZemkDi\Http\Controllers\SocWebController;
 
 use Illuminate\Support\Facades\Auth;
 use Modules\ZemkDi\Http\Controllers\DiImageController;
+use Modules\ZemkDi\Http\Controllers\DiItemsController;
 use Modules\ZemkDi\Http\Controllers\DiPageController;
 
 $appRoutes1 = function () {
@@ -53,17 +54,38 @@ $appRoutes1 = function () {
         Route::put('/service/images', [DiImageController::class, 'store'])->name('zemk-di-images-put');
         // удаление
         Route::post('/service/images/delete', [DiImageController::class, 'destroy'])->name('zemk-di-images-delete');
-        
+
 
         // редактирование страницы
         Route::get('/page/{pageName}', [DiController::class, 'pageEditor'])->name('zemk-page');
 
         // работа со страницами
         // показать форму изменений
-        Route::get('/service/page/{pageName}', [DiPageController::class , 'index' ] )->name('zemk-di-page');
-        // изменить
-        Route::post('/service/page/{page_key}', [DiPageController::class , 'edit' ] )->name('zemk-di-page-edit');
+        Route::get('/service/page/{pageName}', [DiPageController::class, 'index'])->name('zemk-di-page');
+        // сохранить изменения
+        Route::post('/service/page/{page_key}', [DiPageController::class, 'edit'])->name('zemk-di-page-edit');
 
+
+        // работа со списками
+        Route::prefix('service')->group(function () {
+            Route::prefix('items')->group(function () {
+                // показать форму изменений
+                Route::get('{modName}', [DiItemsController::class, 'index'])->name('zemk-di-items');
+
+
+                // изменить
+                Route::get('{modName}/{id}/delete', [DiItemsController::class , 'destroy' ] )->name('zemk-di-items-one-save');
+
+                // изменить
+                Route::post('{modName}/{id}/save', [DiItemsController::class , 'update' ] )->name('zemk-di-items-one-save');
+                
+                // работа с 1 итемом
+                Route::get('{modName}/{modId}/{modAction?}', [DiItemsController::class, 'indexOne'])->name('zemk-di-items-one');
+
+
+
+            });
+        });
     });
 
 
