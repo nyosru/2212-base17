@@ -11,6 +11,9 @@
 
         <br />
         <br />
+        <a href="/service/items/{{ $modName }}/add" >добавить запись</a>
+        <br />
+        <br />
         {{-- items: {{ $items }} --}}
 
         <div class="container mx-auto">

@@ -125,7 +125,7 @@ class DiItemsController extends Controller
      * Display a listing of the resource.
      * @return Renderable
      */
-    public function indexOne(string $modName, int $modId, $modAction = null)
+    public function indexOne(string $modName, $modId = null, $modAction = null)
     {
 
         // dd(__FUNCTION__);
@@ -140,15 +140,42 @@ class DiItemsController extends Controller
             'polyaType' => self::$polyaType
         ];
 
-        // $in['items'] = new ZemkNewsCollection( ZemkNews::all() );
-        if ($modName == 'uslugi') {
-            // $in['items'] = ZemkUslugi::orderByDesc('sort')->get();
-            $in['item0'] = ZemkUslugi::where('id', $modId)->get();
-            $in['item'] = $in['item0'][0]->toArray();
-        } elseif ($modName == 'news') {
-            $in['item0'] = ZemkNews::where('id', $modId)->get()[0];
-            $in['item'] = $in['item0']->toArray();
-        }
+            // $in['items'] = new ZemkNewsCollection( ZemkNews::all() );
+            if ($modName == 'uslugi') {
+                // $in['items'] = ZemkUslugi::orderByDesc('sort')->get();
+                $in['item0'] = ZemkUslugi::where('id', $modId)->get();
+                $in['item'] = $in['item0'][0]->toArray();
+            } elseif ($modName == 'news') {
+                $in['item0'] = ZemkNews::where('id', $modId)->get()[0];
+                $in['item'] = $in['item0']->toArray();
+            }
+
+
+        return view('zemkdi::services.itemsOne', $in);
+        // return view('zemkdi::index');
+
+    }
+
+    /**
+     * показ формы добавления
+     * @return Renderable
+     */
+    public function indexOneAdd(string $modName)
+    {
+
+        // dd(__FUNCTION__);
+
+        self::setup($modName);
+
+        $in = [
+            'pages' => self::$pages,
+            'modName' => $modName,
+            // 'modId' => $modId,
+            'modAction' => 'add',
+            'polyaType' => self::$polyaType
+        ];
+
+        $in['item'] = self::$polyaType;
 
         return view('zemkdi::services.itemsOne', $in);
         // return view('zemkdi::index');
@@ -200,7 +227,7 @@ class DiItemsController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function update(Request $request, $modName, $id)
+    public function update(Request $request, $modName, $id = null)
     {
 
         self::setup($modName);
@@ -219,7 +246,7 @@ class DiItemsController extends Controller
             // удалить текущее
             ZemkNews::where('id', $id)->delete();
         }
-        return redirect('/service/items/'.$modName)
+        return redirect('/service/items/' . $modName)
             ->with('success', 'Изменения сохранены');
     }
 
@@ -237,7 +264,7 @@ class DiItemsController extends Controller
             ZemkNews::where('id', $id)->delete();
         }
 
-        return redirect('/service/items/'.$modName)
+        return redirect('/service/items/' . $modName)
             ->with('success', 'Удалено');
     }
 }

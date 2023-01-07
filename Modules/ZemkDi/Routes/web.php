@@ -69,18 +69,22 @@ $appRoutes1 = function () {
         // работа со списками
         Route::prefix('service')->group(function () {
             Route::prefix('items')->group(function () {
+
                 // показать форму изменений
                 Route::get('{modName}', [DiItemsController::class, 'index'])->name('zemk-di-items');
 
-                // изменить
+                // удалить
                 Route::get('{modName}/{id}/delete', [DiItemsController::class , 'destroy' ] )->name('zemk-di-items-one-delete');
 
                 // изменить
+                Route::post('{modName}/save', [DiItemsController::class , 'update' ] )->name('zemk-di-items-one-save');
+                // изменить
                 Route::post('{modName}/{id}/save', [DiItemsController::class , 'update' ] )->name('zemk-di-items-one-save');
 
-                // работа с 1 итемом
-                Route::get('{modName}/{modId}/{modAction?}', [DiItemsController::class, 'indexOne'])->name('zemk-di-items-one');
+                Route::get('{modName}/add', [DiItemsController::class, 'indexOneAdd'])->name('zemk-di-items-add');
 
+                // форма работа с 1 итемом
+                Route::get('{modName}/{modId}/{modAction?}', [DiItemsController::class, 'indexOne'])->name('zemk-di-items-one');
 
 
             });
