@@ -72,7 +72,6 @@ $appRoutes1 = function () {
                 // показать форму изменений
                 Route::get('{modName}', [DiItemsController::class, 'index'])->name('zemk-di-items');
 
-
                 // изменить
                 Route::get('{modName}/{id}/delete', [DiItemsController::class , 'destroy' ] )->name('zemk-di-items-one-delete');
 

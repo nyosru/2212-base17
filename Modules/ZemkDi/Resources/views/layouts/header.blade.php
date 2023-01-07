@@ -59,10 +59,15 @@
                                             class="block px-6 py-2 border-b border-gray-200 w-full uppercase font-semibold text-gray-700">
                                             Модули</p>
 
+                                        <a href="/service/items/uslugi" aria-current="true"
+                                            class="block px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">
+                                            Услуги
+                                        </a>
 
                                         <a href="/service/items/news" aria-current="true"
-                                            class="block px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">Amet
-                                            Новости</a>
+                                            class="block px-6 py-2 border-b border-gray-200 w-full hover:bg-gray-50 hover:text-gray-700 transition duration-150 ease-in-out">
+                                            Новости
+                                        </a>
 
 
                                         {{-- @yield('menu') --}}
@@ -226,8 +231,7 @@
                         aria-labelledby="dropdownMenuButton2">
                         <li>
                             <a class="        dropdown-item        text-sm        py-2        px-4        font-normal        block        w-full        whitespace-nowrap        bg-transparent        text-gray-700        hover:bg-gray-100      "
-                                {{-- href="{{ route('zemk-logout2') }}">Выйти</a> --}}
-                                href="/zemk/logout2">Выйти</a>
+                                {{-- href="{{ route('zemk-logout2') }}">Выйти</a> --}} href="/zemk/logout2">Выйти</a>
                         </li>
                         {{-- <li>
                             <a class="        dropdown-item        text-sm        py-2        px-4        font-normal        block        w-full        whitespace-nowrap        bg-transparent        text-gray-700        hover:bg-gray-100      "

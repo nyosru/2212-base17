@@ -15,15 +15,16 @@
 
         <div class="container mx-auto">
             @foreach ($items as $i)
-                <div class="flex flex-row mb-1 px-5 py-2 bg-gray-200">
+                <div class="flex flex-row mb-1 px-5 py-2 bg-gray-200 border-indigo-600 border ">
                     <div class="basis-1/6"> 
                         {{-- {{ $i->id }} / --}}
-                        {{ $i->date }}
+                        {{ $i->date ?? $i->sort ?? 'x' }}
                     </div>
                     <div class="basis-5/6">
-                        <b>{{ $i->head }}</b>
+                        <b>{{ $i->head ?? 'x' }}</b>
                         <br />
-                        {!! $i->opis_small !!}
+                        {!! $i->opis_small ?? '' !!}
+                        {!! $i->opis ?? '' !!}
                         <br />
                         <a href="/service/items/{{ $modName }}/{{ $i->id }}/edit" class="text-blue-700 hover:underline">изменить</a> /
                         <a href="/service/items/{{ $modName }}/{{ $i->id }}/delete" 

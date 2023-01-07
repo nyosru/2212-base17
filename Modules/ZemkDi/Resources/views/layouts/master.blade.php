@@ -31,6 +31,7 @@
         html {
             background-image: url('https://mdbootstrap.com/img/new/textures/full/{{ rand(1, 300) }}.jpg');
             background-size: cover;
+            background-attachment: fixed;
             /* background-position-y: center; */
         }
 
@@ -38,7 +39,6 @@
                 background-color: rgba(255, 255, 255, 0.7);
                 min-height: 100vh;
             }
-
         @endauth
     </style>
 

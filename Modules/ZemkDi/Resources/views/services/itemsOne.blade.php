@@ -3,6 +3,17 @@
 @section('content')
     <div class="container">
 
+        @if ($errors->any())
+        <br/>
+        <br/>
+        найдены ошибки
+            @foreach ($errors->all() as $error)
+                <div class="bg-red-100 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3" role="alert">
+                    {{ $error }}
+                </div>
+            @endforeach
+        @endif
+
         @if (session()->get('success'))
             <div class="bg-green-100 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3" role="alert">
                 {!! session()->get('success') !!}
@@ -41,8 +52,8 @@
         {{-- <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script> --}}
 
         @if ($modAction == 'edit')
-        <form action="/service/items/{{ $modName }}/{{ $modId }}/save" method="post" >
-            @csrf
+            <form action="/service/items/{{ $modName }}/{{ $modId }}/save" method="post">
+                @csrf
         @endif
 
         @foreach ($item as $k => $i)
@@ -50,7 +61,9 @@
             @elseif($k == 'updated_at')
             @elseif($k == 'deleted_at')
             @else --}}
-            <div class="flex flex-row mb-3">
+            {{-- <div class="border-indigo-600 border-2 mb-3"> --}}
+            <div class="mb-3">
+            <div class="flex flex-row ">
                 <div class="basis-1/6 text-right pr-3"> {{ $k }} </div>
                 <div class="basis-5/6">
                     @if ($modAction == 'edit')
@@ -60,6 +73,12 @@
                             {{-- ++  {{ $polyaType[$k] }} ++ <br/> --}}
                             @if ($polyaType[$k] == 'date')
                                 <input type="date" class="w-full border border-gray-500 px-5 py-2"
+                                    name="{{ $k }}" value="{{ $i }}" />
+                            @elseif($polyaType[$k] == 'int-1-99')
+                                <input type="number" step="1" min="1" max="99" class="w-full border border-gray-500 px-5 py-2"
+                                    name="{{ $k }}" value="{{ $i }}" />
+                            @elseif($polyaType[$k] == 'int')
+                                <input type="number" step="1" class="w-full border border-gray-500 px-5 py-2"
                                     name="{{ $k }}" value="{{ $i }}" />
                             @elseif($polyaType[$k] == 'textareaHtml')
                                 {{-- 111 --}}
@@ -119,18 +138,19 @@
     </div> --}}
                 {{-- @endif --}}
             </div>
+            </div>
         @endforeach
 
         @if ($modAction == 'edit')
             <div class="flex flex-row mb-3">
                 <div class="basis-1/6">&nbsp;</div>
                 <div class="basis-5/6">
-                  <button type="submit" class="rounded-md delay-500 hover:rounded-full px-5 py-3 bg-cyan-400" >Сохранить</button>
+                    <button type="submit"
+                        class="rounded-md delay-500 hover:rounded-full px-5 py-3 bg-cyan-400">Сохранить</button>
                 </div>
             </div>
 
             </form>
-            
         @endif
     </div>
 @endsection
