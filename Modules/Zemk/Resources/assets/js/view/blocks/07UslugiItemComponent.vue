@@ -29,12 +29,12 @@
               >
                 <h2 class="text-3xl font-bold mb-6">{{ i.head }}</h2>
 
-                <p class="text-gray-500 mb-6">
+                <div class="text-gray-500 mb-6">
                   <!-- {{ i.opis }} -->
                   <span v-html="i.opis"></span>
-                </p>
+                </div>
 
-                <!-- i: {{ i }} -->
+                <form-input :formTitle="i.head"/>
 
                 <div
                   v-if="1 == 2"
@@ -205,6 +205,9 @@
 </template>
 
 <script setup>
+
+import formInput from './08UslugiItemFormComponent.vue'
+
 import FnNumeric from './../../use/FnNumeric'
 const { randomInteger } = FnNumeric()
 
@@ -213,6 +216,8 @@ defineProps({
   leftSide: Boolean,
   // likes: Number
 })
+
+const showForm = []
 </script>
 
 <style scoped>

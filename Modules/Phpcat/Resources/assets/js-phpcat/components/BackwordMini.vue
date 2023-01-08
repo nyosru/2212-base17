@@ -104,6 +104,7 @@ export default {
       //   console.log('ww',ww);
       this.result = ww;
     },
+    
   },
 };
 </script>

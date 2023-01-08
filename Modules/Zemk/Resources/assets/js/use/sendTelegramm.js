@@ -7,28 +7,28 @@ const loading = ref(false);
 const sended = ref(false);
 const errored = ref(false);
 
-const sendToTelegramm = async (msg) => {
+const sendToTelegramm = async(msg) => {
 
     loading.value = true;
 
     let res = await axios
-        .post('https://api.uralweb.info/telegram.php',
-            {
-                domain: window.location.hostname,
-                // show_datain: 1,
-                answer: 'json',
+        .post('https://api.uralweb.info/telegram.php', {
+            domain: window.location.hostname,
+            // show_datain: 1,
+            answer: 'json',
 
-                // s: md5('1'),
-                s: md5(window.location.hostname),
+            // s: md5('1'),
+            s: md5(window.location.hostname),
 
-                // id: 1,
-                id: [
-                    360209578, // я
-                    // 1368605419, // я тест
-                    // 2037908418 // ваш метролог
-                ],
-                msg
-            })
+            // id: 1,
+            id: [
+                360209578, // я
+                // 5152088168, // я тест
+                // 5152088168777, // я тест ошибка
+                // 2037908418 // ваш метролог
+            ],
+            msg
+        })
         .catch((error) => {
             console.log("error", error);
             return 'errored';

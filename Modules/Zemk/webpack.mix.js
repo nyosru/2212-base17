@@ -33,14 +33,17 @@ mix
         __dirname + '/Resources/assets/css/app.css',
         __dirname + '/Resources/assets/to-public-zemk/app.css', [require('tailwindcss')],
     )
-    .sourceMaps()
-    // .sass(__dirname + '/Resources/assets/sass/app.scss', 'ttt/css.css')
 
+// .sass(__dirname + '/Resources/assets/sass/app.scss', 'ttt/css.css')
 
 // mix.copy(__dirname + '/Resources/assets/img', __dirname + '/Resources/assets/to-public-ttt/img');
 
 if (mix.inProduction()) {
     //     mix.version()
+    mix.sourceMaps()
 } else {
-    mix.copy(__dirname + '/Resources/assets/to-public-zemk/', __dirname + '/../../public/zemk/')
+    mix.copy(
+        __dirname + '/Resources/assets/to-public-zemk/',
+        __dirname + '/../../public/zemk/',
+    )
 }
