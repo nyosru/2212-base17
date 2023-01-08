@@ -18,6 +18,7 @@ class ZemkUslugiResource extends JsonResource
         $r =[
         'id' => $this->id,
         'head' => $this->head,
+        'img' => $this->img,
         'opis' => $this->opis,
         'sort' => $this->sort,
         ];

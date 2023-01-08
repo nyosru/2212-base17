@@ -29,7 +29,7 @@
               >
                 <h2 class="text-3xl font-bold mb-6">{{ i.head }}</h2>
 
-                <div class="text-gray-500 mb-6">
+                <div class="mb-6">
                   <!-- {{ i.opis }} -->
                   <span v-html="i.opis"></span>
                 </div>
@@ -187,7 +187,7 @@
 
             <div v-if="!leftSide" class="md:mb-12 lg:mb-0">
               <img
-                :src="
+                :src="i.img ??
                   'https://mdbootstrap.com/img/new/ecommerce/vertical/0' +
                   randomInteger(10, 99) +
                   '.jpg'

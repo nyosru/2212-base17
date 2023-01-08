@@ -52,10 +52,11 @@
         {{-- <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script> --}}
 
         @if (!empty($modAction) && $modAction == 'edit')
-            <form action="/service/items/{{ $modName }}/{{ $modId }}/save" method="post">
+            <form action="/service/items/{{ $modName }}/{{ $modId }}/save" method="post"
+                enctype="multipart/form-data">
                 @csrf
             @elseif (!empty($modAction) && $modAction == 'add')
-                <form action="/service/items/{{ $modName }}/save" method="post">
+                <form action="/service/items/{{ $modName }}/save" method="post" enctype="multipart/form-data">
                     @csrf
         @endif
 
@@ -69,25 +70,28 @@
                 <div class="flex flex-row ">
                     <div class="basis-1/6 text-right pr-3"> {{ $k }} </div>
                     <div class="basis-5/6">
-                        @if (!empty($modAction) && ( $modAction == 'edit' || $modAction == 'add' ) )
+                        @if (!empty($modAction) && ($modAction == 'edit' || $modAction == 'add'))
                             {{-- {{ $k }}<br/> --}}
 
                             @if (!empty($polyaType[$k]))
                                 {{-- ++  {{ $polyaType[$k] }} ++ <br/> --}}
                                 @if ($polyaType[$k] == 'date')
                                     <input type="date" class="w-full border border-gray-500 px-5 py-2"
-                                        name="{{ $k }}" value="{{ $i }}" />
+                                        name="{{ $k }}" value="{{ $i }}" value="{{ old($k) }}" />
                                 @elseif($polyaType[$k] == 'int-1-99')
                                     <input type="number" step="1" min="1" max="99"
                                         class="w-full border border-gray-500 px-5 py-2" name="{{ $k }}"
-                                        value="{{ $i }}" />
+                                        value="{{ old($k) }}" />
+                                @elseif($polyaType[$k] == 'imageJpg')
+                                    <input type="file" class="w-full border border-gray-500 px-5 py-2"
+                                        name="{{ $k }}" value="{{ old($k) }}" />
                                 @elseif($polyaType[$k] == 'int')
                                     <input type="number" step="1" class="w-full border border-gray-500 px-5 py-2"
-                                        name="{{ $k }}" value="{{ $i }}" />
+                                        name="{{ $k }}" value="{{ old($k) }}" />
                                 @elseif($polyaType[$k] == 'textareaHtml')
                                     {{-- 111 --}}
                                     {{-- <textarea id="{{ $k }}" class="{{ $k }} w-full border border-gray-500 px-5 py-2" style="height:500px;" name="{{ $k }}">{{ $i }}</textarea> --}}
-                                    <textarea id="{{ $k }}" name="{{ $k }}">{!! $i !!}</textarea>
+                                    <textarea id="{{ $k }}" name="{{ $k }}">{!! old($k) ?? $i !!}</textarea>
 
                                     {{-- <textarea>                                  Welcome to TinyMCE!                                </textarea> --}}
                                     {{-- @verbatim --}}
@@ -123,7 +127,7 @@
                                     <textarea class="w-full border border-gray-500 px-5 py-2" name="{{ $k }}">{{ $i }}</textarea>
                                 @else
                                     <input type="text" class="w-full border border-gray-500 px-5 py-2"
-                                        name="{{ $k }}" value="{{ $i }}" />
+                                        name="{{ $k }}" value="{{ old($k) ?? $i }}" />
                                 @endif
                             @else
                                 {{ $i ?? '---' }}

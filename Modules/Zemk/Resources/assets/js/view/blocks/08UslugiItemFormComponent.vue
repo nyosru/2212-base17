@@ -13,17 +13,16 @@
       </div>
 
       <form v-else @submit.prevent="formSend" class="mt-5">
-        <p class="text-gray-600">
-          Отправте свой телефон и очень кратко что нужно, позвоним уточнить
-          детали заказа
+        <p class="text-gray-600 text-md text-center">
+          Отправте заявку 👇
         </p>
         <input
           type="text"
-          class="form-control block w-full mt-3 mb-3 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+          class="form-control text-center block w-full mt-3 mb-3 px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
           name="phone"
           required
           @click="showForm = true"
-          placeholder="89***"
+          placeholder="8-9**-***-**-**"
           v-model="formPhone"
         />
         <div v-if="showForm == true">
@@ -34,22 +33,24 @@
             placeholder="обозначьте что нужно сделать, кратко"
             v-model="formMsg"
           ></textarea>
-          <div v-if="loading">... отправляю ...</div>
-          <button
-            v-else
-            type="submit"
-            class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-          >
-            Отправить
-          </button>
-          <transition name="fade">
-            <div
-              class="text-red-800 inline-block bg-red-400 ml-3 rounded-md px-2 py-1"
-              v-if="result == 'errored'"
+          <div class="text-center">
+            <div v-if="loading">... отправляю ...</div>
+            <button
+              v-else
+              type="submit"
+              class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
             >
-              упс .. произошла ошибка
-            </div>
-          </transition>
+              Отправить
+            </button>
+            <transition name="fade">
+              <div
+                class="text-red-800 inline-block bg-red-400 ml-3 rounded-md px-2 py-1"
+                v-if="result == 'errored'"
+              >
+                упс .. произошла ошибка
+              </div>
+            </transition>
+          </div>
         </div>
       </form>
     </transition>

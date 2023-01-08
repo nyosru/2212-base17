@@ -5,6 +5,7 @@ namespace Modules\ZemkDi\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Storage;
 use Modules\Zemk\Entities\ZemkNews;
 use Modules\Zemk\Entities\ZemkUslugi;
 use Modules\Zemk\Transformers\ZemkNewsCollection;
@@ -28,7 +29,9 @@ class DiItemsController extends Controller
         ]
     ];
 
+    // public static $polya = [];
     public static $polyaType = [];
+    public static $moduleNow = '';
 
     /**
      * валидация для сохранения изменений / добавления
@@ -46,8 +49,34 @@ class DiItemsController extends Controller
     {
         if ($modName == 'uslugi') {
 
+            self::$moduleNow = 'zemk';
+
+            // self::$polya = [
+            //     'head' => [
+            //         'type' => 'string',
+            //         'praviloValid' => 'required'
+            //     ],
+            //     'img' => [
+            //         'type' => 'imageJpg',
+            //         'praviloValid' => 'required',
+
+            //     ],
+            //     // 'date' => 'date',
+            //     // 'opis_small' => 'textareaHtml',
+            //     'opis' => [
+            //         'type' => 'textareaHtml',
+            //         'praviloValid' => 'required'
+            //     ],
+            //     'sort' => [
+            //         'type' => 'int-1-99',
+            //         'praviloValid' => 'required'
+            //     ],
+            // ];
+
             self::$polyaType = [
+                'key' => 'string',
                 'head' => 'string',
+                'img' => 'imageJpg',
                 // 'date' => 'date',
                 // 'opis_small' => 'textareaHtml',
                 'opis' => 'textareaHtml',
@@ -63,7 +92,9 @@ class DiItemsController extends Controller
              */
             self::$validPravila = [
                 // 'title' => 'required|unique:posts|max:255',
+                'key' => 'required|unique:zemk_uslugis',
                 'head' => 'required',
+                'img' => 'image',
                 // 'date' => 'required',
                 // 'opis_small' => 'required',
                 'opis' => 'required',
@@ -71,6 +102,8 @@ class DiItemsController extends Controller
                 // 'author_id' => 'required',
             ];
         } elseif ($modName == 'news') {
+
+            self::$moduleNow = 'zemk';
 
             self::$polyaType = [
                 'head' => 'string',
@@ -122,7 +155,7 @@ class DiItemsController extends Controller
     }
 
     /**
-     * Display a listing of the resource.
+     * Display one the resource.
      * @return Renderable
      */
     public function indexOne(string $modName, $modId = null, $modAction = null)
@@ -140,15 +173,15 @@ class DiItemsController extends Controller
             'polyaType' => self::$polyaType
         ];
 
-            // $in['items'] = new ZemkNewsCollection( ZemkNews::all() );
-            if ($modName == 'uslugi') {
-                // $in['items'] = ZemkUslugi::orderByDesc('sort')->get();
-                $in['item0'] = ZemkUslugi::where('id', $modId)->get();
-                $in['item'] = $in['item0'][0]->toArray();
-            } elseif ($modName == 'news') {
-                $in['item0'] = ZemkNews::where('id', $modId)->get()[0];
-                $in['item'] = $in['item0']->toArray();
-            }
+        // $in['items'] = new ZemkNewsCollection( ZemkNews::all() );
+        if ($modName == 'uslugi') {
+            // $in['items'] = ZemkUslugi::orderByDesc('sort')->get();
+            $in['item0'] = ZemkUslugi::where('id', $modId)->get();
+            $in['item'] = $in['item0'][0]->toArray();
+        } elseif ($modName == 'news') {
+            $in['item0'] = ZemkNews::where('id', $modId)->get()[0];
+            $in['item'] = $in['item0']->toArray();
+        }
 
 
         return view('zemkdi::services.itemsOne', $in);
@@ -234,6 +267,18 @@ class DiItemsController extends Controller
 
         // Получить проверенные входные данные...
         $validated = $request->validate(self::$validPravila);
+
+
+        // сохранение файлов
+        foreach (self::$polyaType as $p => $t) {
+            if ($t == 'imageJpg') {
+                $path = $request->file($p)->store('public/' . self::$moduleNow . '/items-img/' . $modName);
+                // dd([ '$path',$path ]);
+                $validated[$p] = Storage::url($path);
+                // dd([ '$path',$path , '$p1',$p1 ]);
+            }
+        }
+
 
         if ($modName == 'uslugi') {
             // записать новое
