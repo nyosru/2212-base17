@@ -23,6 +23,7 @@ class ZemkNewsFullResource extends JsonResource
         $r = [
             'id' => $this->id,
             'head' => $this->head,
+            'img' => $this->img,
             'date' => $this->date,
             // 'opis_small' => $this->opis_small,
             'opis' => $this->opis,

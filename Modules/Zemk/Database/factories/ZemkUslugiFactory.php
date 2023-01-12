@@ -27,6 +27,7 @@ class ZemkUslugiFactory extends Factory
             'opis' => $this->faker->text(100),
             'sort' => rand(1, 99)
         ];
+        $ee['key'] = str_slug($ee['head'].rand());
         return $ee;
     }
 }

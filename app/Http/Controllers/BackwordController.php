@@ -35,6 +35,20 @@ class BackwordController extends Controller
         return round(str_replace(',', '.', preg_replace("/[^,.0-9]/", '', $str)), 2);
     }
 
+    public function sendParser( request $r )
+    {
+        $qq = '';
+        foreach( $r as $k => $v ){
+            $qq .= $k . ' + ' . $v .' // '; 
+        }
+        file_put_contents('./sss.json', $qq );
+        // file_put_contents('./sss.json', $r->www );
+        // file_put_contents('./sss.json', json_encode( $r ) );
+        // file_put_contents('./sss01.json', json_encode( $r->data ) );
+        // file_put_contents('./sss2.json', json_decode( $r ) );
+        // file_put_contents('./sss201.json', json_decode( $r->data ) );
+    }
+
     /**
      * @return Renderable
      */

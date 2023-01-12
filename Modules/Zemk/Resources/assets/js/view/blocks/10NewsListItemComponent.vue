@@ -3,15 +3,20 @@
     <div v-if="1 == 1" class="mb-6 lg:mb-0">
       <div class="relative block bg-white rounded-lg shadow-lg">
         <div class="flex">
-          <router-link :to="'/news/read/' + item.id">
+          <router-link :to="'/news/read/' + item.key">
             <div
               class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
               data-mdb-ripple="true"
               data-mdb-ripple-color="light"
             >
               <img
-                xsrc="https://mdbcdn.b-cdn.net/img/new/standard/city/024.webp"
-                src="http://placekitten.com/g/400/120"
+                :src="
+                  item.img && item.img.length > 0
+                    ? item.img
+                    : 'https://mdbcdn.b-cdn.net/img/new/standard/city/0' +
+                      randomInteger(10, 99) +
+                      '.webp'
+                "
                 class="w-full"
               />
               <!-- <a href="#!"> -->
@@ -24,7 +29,7 @@
           </router-link>
         </div>
         <div class="p-6">
-          <router-link :to="'/news/read/' + item.id">
+          <router-link :to="'/news/read/' + item.key">
             <h5 class="font-bold text-lg mb-3">{{ item.head }}</h5>
             <p class="text-gray-500 mb-4">
               <small>
@@ -35,13 +40,13 @@
                     {{ item.author_website }}
                   </a>
                 </span>
-                <span v-else> от {{ item.author_name }}</span>
+                <span v-else>от {{ item.author_name }}</span>
                 <!-- от            <a href="//gosuslugi.ru" target="_blank" class="text-gray-900">гос сайт</a> -->
               </small>
             </p>
-            <p class="mb-4 pb-2">
-              {{ item.opis_small }}
-            </p>
+            <div class="mb-4 pb-2">
+              <span v-html="item.opis_small"></span>
+            </div>
           </router-link>
           <!-- <a
           href="#!"
@@ -111,6 +116,9 @@
 </template>
 
 <script setup>
+import FnNumeric from './../../use/FnNumeric'
+const { randomInteger } = FnNumeric()
+
 defineProps({
   item: Object,
   // likes: Number

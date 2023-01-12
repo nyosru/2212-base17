@@ -46,7 +46,7 @@ export const routes = [{
     {
         name: 'newsRead',
         //only be matched if :id is all numbers
-        path: '/news/read/:id(\\d+)',
+        path: '/news/read/:key',
         components: {
             // default: '',
             body: NewsReadComponent

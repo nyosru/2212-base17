@@ -107,7 +107,9 @@ class DiItemsController extends Controller
 
             self::$polyaType = [
                 'head' => 'string',
+                'key' => 'string',
                 'date' => 'date',
+                'img' => 'imageJpg',
                 'opis_small' => 'textareaHtml',
                 'opis' => 'textareaHtml',
                 // 'created_at' => 'noedit',
@@ -122,7 +124,9 @@ class DiItemsController extends Controller
             self::$validPravila = [
                 // 'title' => 'required|unique:posts|max:255',
                 'head' => 'required',
+                'key' => 'required|unique:zemk_news',
                 'date' => 'required',
+                'img' => 'image',
                 'opis_small' => 'required',
                 'opis' => 'required',
                 'author_id' => 'required',

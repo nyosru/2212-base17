@@ -29,10 +29,10 @@ use Modules\Zemk\Transformers\ZemkUslugiResource;
 
 $appRoutes1 = function () {
 
-    Route::get('/zemk/news/{id}', function ( $id ) {
+    Route::get('/zemk/news/{key}', function ( $key ) {
         // return new ZemkNewsFullCollection(ZemkNews::where('id',$id)->paginate(0));
-        return new ZemkNewsFullResource(ZemkNews::findOrFail($id));
-    })->whereNumber('id')->name('zemk-newsShow');
+        return new ZemkNewsFullResource(ZemkNews::where('key',$key)->first());
+    })->name('zemk-newsShow');
         
     Route::get('/zemk/page/{page}', function ( $page ) {
         // return new ZemkNewsFullCollection(ZemkNews::where('id',$id)->paginate(0));
@@ -42,7 +42,7 @@ $appRoutes1 = function () {
     })->whereNumber('id')->name('zemk-newsShow');
         
     Route::get('/zemk/news', function (Request $request) {
-        return new ZemkNewsCollection(ZemkNews::with('author')->orderBy('date', 'desc')->paginate(3));
+        return new ZemkNewsCollection(ZemkNews::with('author')->orderBy('date', 'desc')->paginate(9));
     });
 
     Route::get('/zemk/uslugi', function (Request $request) {

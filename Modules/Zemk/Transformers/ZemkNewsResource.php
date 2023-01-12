@@ -23,11 +23,13 @@ class ZemkNewsResource extends JsonResource
         $r =             [
             'id' => $this->id,
             'head' => $this->head,
+            'img' => $this->img,
             'date' => $this->date,
             'opis_small' => $this->opis_small,
             // 'opis' => $this->opis,
             'author_name' => $this->author->name,
             'author_website' => $this->author->website_for_news,
+            'key' => $this->key,
             //         // 'email' => $this->email,
             // 'created_at' => $this->created_at,
             // 'updated_at' => $this->updated_at,

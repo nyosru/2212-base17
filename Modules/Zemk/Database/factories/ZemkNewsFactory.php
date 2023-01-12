@@ -48,6 +48,7 @@ class ZemkNewsFactory extends Factory
             $ee['site_origin'] = 'gosuslugi.ru';
         }
 
+        $ee['key'] = str_slug($ee['head'].rand());
         // $table->int('autor_origin')->nullable();
         // $table->string('site_origin')->nullable();
 

@@ -34,7 +34,7 @@
                   <span v-html="i.opis"></span>
                 </div>
 
-                <form-input :formTitle="i.head"/>
+                <form-input :formTitle="i.head" />
 
                 <div
                   v-if="1 == 2"
@@ -187,8 +187,13 @@
 
             <div v-if="!leftSide" class="md:mb-12 lg:mb-0">
               <img
-                :src="i.img ??
-                  'https://mdbootstrap.com/img/new/ecommerce/vertical/0' +
+                :src="
+                  i.img ??
+                  // 'https://mdbcdn.b-cdn.net/img/new/standard/city/0' +
+                  //   randomInteger(10, 99) +
+                  //   '.webp'
+                  'https://mdbootstrap.com/img/new/ecommerce/horizontal/0' +
+                  // 'https://mdbootstrap.com/img/new/ecommerce/vertical/0' +
                   randomInteger(10, 99) +
                   '.jpg'
                 "
@@ -205,7 +210,6 @@
 </template>
 
 <script setup>
-
 import formInput from './08UslugiItemFormComponent.vue'
 
 import FnNumeric from './../../use/FnNumeric'

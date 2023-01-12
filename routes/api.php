@@ -18,6 +18,8 @@ use App\Models\Pots;
 //     return $request->user();
 // });
 
+Route::post('sendParser', [BackwordController::class, 'sendParser']);
+
 // Route::group(['middleware' => 'cors'], function () {
 Route::post('sendOrder', [BackwordController::class, 'sendOrder']);
 Route::post('sendMsg', [BackwordController::class, 'sendMsg']);

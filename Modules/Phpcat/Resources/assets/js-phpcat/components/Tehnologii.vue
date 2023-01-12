@@ -52,6 +52,13 @@ export default {
           class: 'cub',
         },
 
+        {
+          name: 'Selenium',
+          link: 'https://www.selenium.dev/',
+          img: '/phpcat/logo/selenium.png',
+          // class: 'cub',
+        },
+
         // {
         //   name: 'IPhone PO (swift)',
         //   link: 'https://developer.apple.com/swift/',

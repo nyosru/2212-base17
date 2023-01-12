@@ -14,7 +14,8 @@ class NewsAddPoleKey extends Migration
     public function up()
     {
         Schema::table('zemk_news', function (Blueprint $table) {
-            $table->string('key')->unique();
+            $table->string('key')->index();
+            $table->string('img')->nullable();
         });
     }
 
@@ -27,6 +28,7 @@ class NewsAddPoleKey extends Migration
     {
         Schema::table('zemk_news', function (Blueprint $table) {
             $table->dropColumn('key');
+            $table->dropColumn('img');
         });
     }
 }

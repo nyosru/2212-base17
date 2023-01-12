@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class UslugiAddPoleKey extends Migration
+class UserAddSoftdelete extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class UslugiAddPoleKey extends Migration
      */
     public function up()
     {
-        Schema::table('zemk_uslugis', function (Blueprint $table) {
-            $table->string('key')->index();
+        Schema::table('zemk_users', function (Blueprint $table) {
+            $table->softDeletes();
         });
+        
     }
 
     /**
@@ -25,8 +26,8 @@ class UslugiAddPoleKey extends Migration
      */
     public function down()
     {
-        Schema::table('zemk_uslugis', function (Blueprint $table) {
-            $table->dropColumn('key');
+        Schema::table('zemk_users', function (Blueprint $table) {
+            $table->dropSoftDeletes();
         });
     }
 }

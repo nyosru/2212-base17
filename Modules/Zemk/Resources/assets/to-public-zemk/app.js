@@ -20011,7 +20011,7 @@ var routes = [{
 }, {
   name: 'newsRead',
   //only be matched if :id is all numbers
-  path: '/news/read/:id(\\d+)',
+  path: '/news/read/:key',
   components: {
     // default: '',
     body: _view_blocks_11NewsReadComponent_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
@@ -20760,6 +20760,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _use_FnNumeric__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./../../use/FnNumeric */ "./Resources/assets/js/use/FnNumeric.js");
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   __name: '10NewsListItemComponent',
   props: {
@@ -20769,7 +20771,14 @@ __webpack_require__.r(__webpack_exports__);
   setup: function setup(__props, _ref) {
     var expose = _ref.expose;
     expose();
-    var __returned__ = {};
+    var _FnNumeric = (0,_use_FnNumeric__WEBPACK_IMPORTED_MODULE_0__["default"])(),
+      randomInteger = _FnNumeric.randomInteger;
+    var __returned__ = {
+      randomInteger: randomInteger,
+      get FnNumeric() {
+        return _use_FnNumeric__WEBPACK_IMPORTED_MODULE_0__["default"];
+      }
+    };
     Object.defineProperty(__returned__, '__isScriptSetup', {
       enumerable: false,
       value: true
@@ -20794,8 +20803,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.mjs");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.mjs");
 /* harmony import */ var _use_Breadcrumbs_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../use/Breadcrumbs.js */ "./Resources/assets/js/use/Breadcrumbs.js");
+/* harmony import */ var _use_FnNumeric__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../use/FnNumeric */ "./Resources/assets/js/use/FnNumeric.js");
+
 
 
 
@@ -20805,6 +20816,8 @@ __webpack_require__.r(__webpack_exports__);
   setup: function setup(__props, _ref) {
     var expose = _ref.expose;
     expose();
+    var _FnNumeric = (0,_use_FnNumeric__WEBPACK_IMPORTED_MODULE_3__["default"])(),
+      randomInteger = _FnNumeric.randomInteger;
     var _Breadc = (0,_use_Breadcrumbs_js__WEBPACK_IMPORTED_MODULE_2__["default"])(),
       breadcrSteps = _Breadc.steps,
       breadcrumbsAddStep = _Breadc.breadcrumbsAddStep,
@@ -20821,10 +20834,10 @@ __webpack_require__.r(__webpack_exports__);
     // { nameLink: 'Новости2', to: '/news/77', active: true },
     ]);
 
-    var route = (0,vue_router__WEBPACK_IMPORTED_MODULE_3__.useRoute)();
+    var route = (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.useRoute)();
 
     // console.log('$attrs',$attrs);
-    console.log('route.params.id', route.params.id);
+    console.log('route.params.id', route.params.key);
     // console.log('this $route',this.$route);
     // console.log('this $route',this.$router);
     // console.log('$router',$router);
@@ -20848,7 +20861,7 @@ __webpack_require__.r(__webpack_exports__);
     var item = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
     var loading = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(true);
     var errored = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(false);
-    axios__WEBPACK_IMPORTED_MODULE_1___default().get('//' + window.location.host + '/api/zemk/news/' + route.params.id).then(function (response) {
+    axios__WEBPACK_IMPORTED_MODULE_1___default().get('//' + window.location.host + '/api/zemk/news/' + route.params.key).then(function (response) {
       if (response.status == 200) {
         item.value = response.data.data;
         loading.value = false;
@@ -20857,6 +20870,7 @@ __webpack_require__.r(__webpack_exports__);
       }
     });
     var __returned__ = {
+      randomInteger: randomInteger,
       breadcrSteps: breadcrSteps,
       breadcrumbsAddStep: breadcrumbsAddStep,
       breadcrumbsCreate: breadcrumbsCreate,
@@ -20869,10 +20883,13 @@ __webpack_require__.r(__webpack_exports__);
         return (axios__WEBPACK_IMPORTED_MODULE_1___default());
       },
       get useRoute() {
-        return vue_router__WEBPACK_IMPORTED_MODULE_3__.useRoute;
+        return vue_router__WEBPACK_IMPORTED_MODULE_4__.useRoute;
       },
       get Breadc() {
         return _use_Breadcrumbs_js__WEBPACK_IMPORTED_MODULE_2__["default"];
+      },
+      get FnNumeric() {
+        return _use_FnNumeric__WEBPACK_IMPORTED_MODULE_3__["default"];
       }
     };
     Object.defineProperty(__returned__, '__isScriptSetup', {
@@ -21769,7 +21786,13 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, null, 8 /* PROPS */, _hoisted_12)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["formInput"], {
     formTitle: $props.i.head
   }, null, 8 /* PROPS */, ["formTitle"]),  false ? (0) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])]), !$props.leftSide ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_24, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-    src: (_$props$i$img = $props.i.img) !== null && _$props$i$img !== void 0 ? _$props$i$img : 'https://mdbootstrap.com/img/new/ecommerce/vertical/0' + $setup.randomInteger(10, 99) + '.jpg',
+    src: (_$props$i$img = $props.i.img) !== null && _$props$i$img !== void 0 ? _$props$i$img :
+    // 'https://mdbcdn.b-cdn.net/img/new/standard/city/0' +
+    //   randomInteger(10, 99) +
+    //   '.webp'
+    'https://mdbootstrap.com/img/new/ecommerce/horizontal/0' +
+    // 'https://mdbootstrap.com/img/new/ecommerce/vertical/0' +
+    $setup.randomInteger(10, 99) + '.jpg',
     "class": "w-full rounded-lg shadow-lg rotate-lg-6",
     alt: ""
   }, null, 8 /* PROPS */, _hoisted_25)])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Section: Design Block ")])], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */);
@@ -22101,60 +22124,59 @@ var _hoisted_2 = {
 var _hoisted_3 = {
   "class": "flex"
 };
-var _hoisted_4 = /*#__PURE__*/_withScopeId(function () {
-  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4",
-    "data-mdb-ripple": "true",
-    "data-mdb-ripple-color": "light"
-  }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-    xsrc: "https://mdbcdn.b-cdn.net/img/new/standard/city/024.webp",
-    src: "http://placekitten.com/g/400/120",
-    "class": "w-full"
-  }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a href=\"#!\"> "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-    "class": "absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out",
-    style: {
-      "background-color": "rgba(255, 255, 255, 0.15)"
-    }
-  }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" </a> ")], -1 /* HOISTED */);
-});
-var _hoisted_5 = {
-  "class": "p-6"
-};
-var _hoisted_6 = {
-  "class": "font-bold text-lg mb-3"
-};
-var _hoisted_7 = {
-  "class": "text-gray-500 mb-4"
-};
-var _hoisted_8 = {
-  key: 0
-};
-var _hoisted_9 = ["href"];
-var _hoisted_10 = {
-  key: 1
-};
-var _hoisted_11 = {
-  "class": "mb-4 pb-2"
-};
-var _hoisted_12 = {
-  key: 1,
-  "class": "mb-6 lg:mb-0"
-};
-var _hoisted_13 = {
-  "class": "relative block bg-white rounded-lg shadow-lg"
-};
-var _hoisted_14 = {
-  key: 0,
-  "class": "flex"
-};
-var _hoisted_15 = ["href"];
-var _hoisted_16 = {
+var _hoisted_4 = {
   "class": "relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4",
   "data-mdb-ripple": "true",
   "data-mdb-ripple-color": "light"
 };
-var _hoisted_17 = ["src"];
-var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_5 = ["src"];
+var _hoisted_6 = /*#__PURE__*/_withScopeId(function () {
+  return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+    "class": "absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out",
+    style: {
+      "background-color": "rgba(255, 255, 255, 0.15)"
+    }
+  }, null, -1 /* HOISTED */);
+});
+var _hoisted_7 = {
+  "class": "p-6"
+};
+var _hoisted_8 = {
+  "class": "font-bold text-lg mb-3"
+};
+var _hoisted_9 = {
+  "class": "text-gray-500 mb-4"
+};
+var _hoisted_10 = {
+  key: 0
+};
+var _hoisted_11 = ["href"];
+var _hoisted_12 = {
+  key: 1
+};
+var _hoisted_13 = {
+  "class": "mb-4 pb-2"
+};
+var _hoisted_14 = ["innerHTML"];
+var _hoisted_15 = {
+  key: 1,
+  "class": "mb-6 lg:mb-0"
+};
+var _hoisted_16 = {
+  "class": "relative block bg-white rounded-lg shadow-lg"
+};
+var _hoisted_17 = {
+  key: 0,
+  "class": "flex"
+};
+var _hoisted_18 = ["href"];
+var _hoisted_19 = {
+  "class": "relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4",
+  "data-mdb-ripple": "true",
+  "data-mdb-ripple-color": "light"
+};
+var _hoisted_20 = ["src"];
+var _hoisted_21 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
     "class": "absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out",
     style: {
@@ -22162,37 +22184,41 @@ var _hoisted_18 = /*#__PURE__*/_withScopeId(function () {
     }
   }, null, -1 /* HOISTED */);
 });
-var _hoisted_19 = {
+var _hoisted_22 = {
   "class": "p-6"
 };
-var _hoisted_20 = {
+var _hoisted_23 = {
   "class": "font-bold text-lg mb-3"
 };
-var _hoisted_21 = {
+var _hoisted_24 = {
   "class": "text-gray-500 mb-4"
 };
-var _hoisted_22 = {
+var _hoisted_25 = {
   "class": "mb-4 pb-2"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [ true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: '/news/read/' + $props.item.id
+    to: '/news/read/' + $props.item.key
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_4];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+        src: $props.item.img && $props.item.img.length > 0 ? $props.item.img : 'https://mdbcdn.b-cdn.net/img/new/standard/city/0' + $setup.randomInteger(10, 99) + '.webp',
+        "class": "w-full"
+      }, null, 8 /* PROPS */, _hoisted_5), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a href=\"#!\"> "), _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" </a> ")])];
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["to"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
-    to: '/news/read/' + $props.item.id
+  }, 8 /* PROPS */, ["to"])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    to: '/news/read/' + $props.item.key
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.head), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("u", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.date), 1 /* TEXT */), $props.item.author_website && $props.item.author_website.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" с "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.head), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("small", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("u", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.date), 1 /* TEXT */), $props.item.author_website && $props.item.author_website.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" с "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
         href: 'http://' + $props.item.author_website,
         target: "_blank"
-      }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.author_website), 9 /* TEXT, PROPS */, _hoisted_9)])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_10, " от " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.author_name), 1 /* TEXT */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" от            <a href=\"//gosuslugi.ru\" target=\"_blank\" class=\"text-gray-900\">гос сайт</a> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.opis_small), 1 /* TEXT */)];
+      }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.author_website), 9 /* TEXT, PROPS */, _hoisted_11)])) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("span", _hoisted_12, " от " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($props.item.author_name), 1 /* TEXT */)), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" от            <a href=\"//gosuslugi.ru\" target=\"_blank\" class=\"text-gray-900\">гос сайт</a> ")])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+        innerHTML: $props.item.opis_small
+      }, null, 8 /* PROPS */, _hoisted_14)])];
     }),
-
     _: 1 /* STABLE */
   }, 8 /* PROPS */, ["to"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a\n          href=\"#!\"\n          data-mdb-ripple=\"true\"\n          data-mdb-ripple-color=\"light\"\n          class=\"inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out\"\n        >\n          Read more\n        </a> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" item: {{ item }} ")])])])) : 0,  false ? (0) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]);
 }
@@ -22229,7 +22255,7 @@ var _hoisted_4 = {
 };
 var _hoisted_5 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", {
-    "class": "text-3xl font-bold mb-1 pb-1 text-center"
+    "class": "text-1xl font-bold mb-1 pb-1 text-center"
   }, " Кадастровые новости ", -1 /* HOISTED */);
 });
 var _hoisted_6 = {
@@ -22238,12 +22264,29 @@ var _hoisted_6 = {
 var _hoisted_7 = {
   key: 1
 };
-var _hoisted_8 = /*#__PURE__*/_withScopeId(function () {
+var _hoisted_8 = {
+  "class": "text-3xl"
+};
+var _hoisted_9 = {
+  "class": "text-left"
+};
+var _hoisted_10 = ["src"];
+var _hoisted_11 = ["innerHTML"];
+var _hoisted_12 = /*#__PURE__*/_withScopeId(function () {
   return /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
 });
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_2, [$setup.errored === true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, "...")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [_hoisted_5, $setup.loading === true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, ".. загрузка ..")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.item.head), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.item.date), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.item.opis), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" item: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.item) + " ", 1 /* TEXT */), _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" breadcrSteps: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.breadcrSteps), 1 /* TEXT */)]))]))])]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_2, [$setup.errored === true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_3, "...")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_4, [_hoisted_5, $setup.loading === true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, ".. загрузка ..")) : ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.item.head), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.item.date), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+    src: $setup.item.img && $setup.item.img.length > 0 ? $setup.item.img : 'https://mdbcdn.b-cdn.net/img/new/standard/city/0' + $setup.randomInteger(10, 99) + '.webp',
+    style: {
+      "float": "left",
+      "max-width": "30vw"
+    },
+    "class": "mr-3"
+  }, null, 8 /* PROPS */, _hoisted_10), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+    innerHTML: $setup.item.opis
+  }, null, 8 /* PROPS */, _hoisted_11)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" item: {{ item }} "), _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" breadcrSteps: {{ breadcrSteps }} ")]))]))])]);
 }
 
 /***/ }),
