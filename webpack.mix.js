@@ -25,7 +25,7 @@ const mix = require('laravel-mix');
 
 // файлы из модуля
 
-mix.copy('Modules/Phpcat/Resources/assets/to-public-phpcat/', 'public/phpcat/')
+mix.copy('Modules/Phpcat/Resources/to-public-phpcat/', 'public/phpcat/')
 
 // mix.copy(__dirname + '/Modules/Ttt/Resources/assets/to-public-ttt/', 'public/ttt/')
 mix.copy('Modules/Ttt/Resources/assets/to-public-ttt/', 'public/ttt/')
