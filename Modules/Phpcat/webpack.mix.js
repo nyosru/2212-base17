@@ -9,13 +9,32 @@ mix.setPublicPath('../../public')
 
 mix
 // .js(__dirname + '/Resources/assets/js/app.js', 'js3/phpcat.js')
-    .js(__dirname + '/Resources/assets/js-phpcat/app.js', '/phpcat/app.js')
+    .js(
+        __dirname + '/Resources/assets/js-phpcat/app.js',
+        __dirname + '/Resources/tp-public-phpcat/app.js',
+        // '/phpcat/app.js'
+    )
     .vue()
-    .version()
+    // .version()
 
 // .js(__dirname + '/Resources/assets/js/app.js', '/phpcat123/js.js')
-mix.sass(__dirname + '/Resources/assets/sass/app.scss', '/phpcat/css.css')
+mix.sass(
+    __dirname + '/Resources/assets/sass/app.scss',
+    // '/phpcat/css.css'
+    __dirname + '/Resources/tp-public-phpcat/css.css',
+)
+
+// if (mix.inProduction()) {
+//     mix.version()
+// }
+
 
 if (mix.inProduction()) {
-    mix.version()
+    //     mix.version()
+    mix.sourceMaps()
+} else {
+    mix.copy(
+        __dirname + '/Resources/tp-public-phpcat/',
+        __dirname + '/../../public/phpcat/',
+    )
 }
