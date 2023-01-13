@@ -32,9 +32,9 @@ mix.sass(
 if (mix.inProduction()) {
     //     mix.version()
     mix.sourceMaps()
-} else {
-    mix.copy(
-        __dirname + '/Resources/to-public-phpcat/',
-        __dirname + '/../../public/phpcat/',
-    )
 }
+
+mix.copy(
+    __dirname + '/Resources/to-public-phpcat/',
+    __dirname + '/../../public/phpcat/',
+)
