@@ -1,13 +1,12 @@
 <template>
   <div>
     <div class="container cont-tl mb-5">
-
       <div class="row justify-content-center">
         <div class="col-xl-10 col-12 text-center">
           <h2>Заработаем на простых действиях!!</h2>
           <p>
-            Компании готовы платить, за то что Вы есть! помогите им это сделать, весь доход делим
-            пополам
+            Компании готовы платить, за то что Вы есть! помогите им это сделать,
+            весь доход делим пополам
           </p>
           <p>
             Только только начинаю такой вид деятельности, ещё не все шаги точно
@@ -16,39 +15,36 @@
         </div>
       </div>
 
-      <div
-        v-for="i in list"
-        :key="i.name"
-        class="row justify-content-center"
-      >
+      <div v-for="i in list" :key="i.name" class="row justify-content-center">
         <div class="my-4 col-12 text-center">
           <h2>{{ i.name }}</h2>
         </div>
 
         <div class="col-12">
           <h4>
-            получите <span class="fs-2 bg-warning px-5 py-2 rounded">{{ i.summa }}</span>
+            получите
+            <span class="fs-2 bg-warning px-5 py-2 rounded">{{ i.summa }}</span>
           </h4>
-        </div>
-
-        <div class="col-xl-10 col-12">
+          <br />
+          <br />
+          <br />
           <h4>Условия</h4>
           <ol>
             <li v-for="p in i.kto" :key="p"><span v-html="p"></span></li>
           </ol>
-        </div>
-
-        <div class="col-xl-10 col-12">
+          <br />
+          <br />
+          <br />
           <h4>Описание</h4>
           <ol>
             <li v-for="p in i.opis" :key="p"><span v-html="p"></span></li>
           </ol>
-        </div>
 
-        <div class="col-xl-2 col-12">
+          <br />
+          <br />
+          <br />
           <h4>После получения печенек)</h4>
-        </div>
-        <div class="col-xl-10 col-12">
+
           {{ i.potom }}
         </div>
       </div>
@@ -66,7 +62,7 @@ const list = [
       'больше 20 лет',
       'раньше никогда не было карточки от Альфа Банка',
     ],
-    opis: [      
+    opis: [
       'Заходите в телеграм бота <A href="https://t.me/UralwebBot" target="_blank" >@Uralweb</a> и пишите ему "дай ссылку на альфа банк" ',
       'Отправляет Вам ссылку',
       'Переходите по ссылке, регистрируетесь и заказываете карту бесплатная дебетовая (курьер привезёт бесплатно)',
