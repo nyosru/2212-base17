@@ -2,6 +2,7 @@
   <div>
     <div class="container cont-tl">
       <div class="row justify-content-center">
+        
         <div class="col-xl-10 col-12">
           <h2>Заработаем на простых действиях!!</h2>
         </div>
