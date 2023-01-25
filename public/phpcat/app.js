@@ -24713,9 +24713,9 @@ __webpack_require__.r(__webpack_exports__);
     var expose = _ref.expose;
     expose();
     var list = [{
-      name: 'Альфа банк платит за регистрацию карты',
+      name: 'Альфа банк платит за регистрацию первой карты',
       summa: '~ 500р',
-      usloviay: 'Живёте в России, больше 20 лет, раньше никогда не было карточки от Альфа Банка',
+      kto: ['Живёте в России', 'больше 20 лет', 'раньше никогда не было карточки от Альфа Банка'],
       opis: 'Схема следующая: Пишите мне в тележку @phpcatcom ... "дай ссылку на альфа банк", отправляю вам ссылку, Переходите по ссылке, регистрируетесь и заказываете карту (курьер привезёт бесплатно), пишите мне в тележку @phpcatcom ... что "альфабанк карта на руках" ... пополню вам карту на 20р и нужно что нить купить в магазине незначительное ... потом банк платит мне вознаграждение за вас, мы его делим 50% вам на карту скину'
     }];
     var __returned__ = {
@@ -25828,20 +25828,36 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   "class": "container cont-tl"
 };
-var _hoisted_2 = {
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "row justify-content-center"
-};
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col-xl-10 col-12 text-center"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Заработаем на простых действиях!!"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " Компании готовы платить, помогите им это сделать, весь доход делим пополам ")])], -1 /* HOISTED */);
 var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-xl-10 col-12"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Заработаем на простых действиях!!")], -1 /* HOISTED */);
-
+  "class": "col-xl-3 col-12"
+}, null, -1 /* HOISTED */);
+var _hoisted_4 = {
+  "class": "col-xl-9 col-12"
+};
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col-xl-3 col-12"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "получите")], -1 /* HOISTED */);
+var _hoisted_6 = {
+  "class": "col-xl-9 col-12"
+};
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col-xl-3 col-12"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "Описание")], -1 /* HOISTED */);
+var _hoisted_8 = {
+  "class": "col-xl-9 col-12"
+};
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.list, function (i) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.list, function (i) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
       key: i.name,
-      "class": "col-xl-10 col-12"
-    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.name), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "получите: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.summa), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Описание: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.opis), 1 /* TEXT */)]);
-  }), 64 /* STABLE_FRAGMENT */))])])]);
+      "class": "row justify-content-center"
+    }, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.name), 1 /* TEXT */)]), _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.summa), 1 /* TEXT */), _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.opis), 1 /* TEXT */)]);
+  }), 64 /* STABLE_FRAGMENT */))])]);
 }
 
 /***/ }),
