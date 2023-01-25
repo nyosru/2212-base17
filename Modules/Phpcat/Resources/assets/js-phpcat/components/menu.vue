@@ -1,21 +1,20 @@
 <template>
   <div class="row" v-if="1 == 1">
     <div class="col-12 text-center pb-5 menu" style="line-height: 35px">
-      <router-link class="nobr" :to="{ name: 'index' }">
-        Супер&nbsp;предложение!
+      <router-link :to="{ name: 'index' }">
+        <span class="nobr" >Супер&nbsp;предложение!</span>
         </router-link>
-      <router-link class="nobr" :to="{ name: 'timeline' }">
-        Историческая&nbsp;лента
+      <router-link :to="{ name: 'timeline' }">
+        <span class="nobr" >Историческая&nbsp;лента</span>
       </router-link>
-      <router-link class="nobr" :to="{ name: 'tests' }">
-        Задачки&nbsp;и&nbsp;решения
+      <router-link :to="{ name: 'tests' }">
+        <span class="nobr" >Задачки&nbsp;и&nbsp;решения</span>
       </router-link>
-      <router-link class="nobr" :to="{ name: 'findTorrent' }">
-        Поиск&nbsp;торрентов
-      </router-link>
-
-      <router-link class="nobr" :to="{ name: 'money' }">
-        Деньги за простые действия!!
+      <router-link :to="{ name: 'findTorrent' }">
+        <span class="nobr" >Поиск&nbsp;торрентов</span>
+      </router-link>      
+      <router-link :to="{ name: 'money' }">
+        <span class="nobr" >Деньги за простые действия!!</span>
       </router-link>
       <!-- <router-link :to="{ name: 'lern' }">Учится, не переучится</router-link> -->
     </div>
@@ -80,14 +79,16 @@ export default {
 .menu {
   a {
     background-color: #efefef;
-    padding: 5px 10px;
+    padding: 3px 7px;
     margin-right: 10px;
     border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 7px;
     &.active {
       background-color: #55efef;
     }
   }
 }
 
-.nobr { white-space: pre; }
+.nobr { white-space: pre; margin-right: 5px; }
 </style>

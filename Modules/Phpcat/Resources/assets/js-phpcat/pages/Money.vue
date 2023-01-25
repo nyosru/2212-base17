@@ -31,7 +31,13 @@
           </h4>
         </div>
 
-        <div class="col-xl-2 col-12"></div>
+        <div class="col-xl-10 col-12">
+          <h4>Условия</h4>
+          <ol>
+            <li v-for="p in i.kto" :key="p"><span v-html="p"></span></li>
+          </ol>
+        </div>
+
         <div class="col-xl-10 col-12">
           <h4>Описание</h4>
           <ol>
