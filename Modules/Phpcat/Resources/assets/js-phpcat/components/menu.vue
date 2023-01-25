@@ -1,19 +1,20 @@
 <template>
   <div class="row" v-if="1 == 1">
     <div class="col-12 text-center pb-5 menu" style="line-height: 35px">
-      <router-link :to="{ name: 'index' }">
+      <router-link class="nobr" :to="{ name: 'index' }">
         Супер&nbsp;предложение!
         </router-link>
-      <router-link :to="{ name: 'timeline' }">
+      <router-link class="nobr" :to="{ name: 'timeline' }">
         Историческая&nbsp;лента
       </router-link>
-      <router-link :to="{ name: 'tests' }">
+      <router-link class="nobr" :to="{ name: 'tests' }">
         Задачки&nbsp;и&nbsp;решения
       </router-link>
-      <router-link :to="{ name: 'findTorrent' }">
+      <router-link class="nobr" :to="{ name: 'findTorrent' }">
         Поиск&nbsp;торрентов
       </router-link>
-      <router-link :to="{ name: 'money' }">
+
+      <router-link class="nobr" :to="{ name: 'money' }">
         Деньги за простые действия!!
       </router-link>
       <!-- <router-link :to="{ name: 'lern' }">Учится, не переучится</router-link> -->
@@ -87,4 +88,6 @@ export default {
     }
   }
 }
+
+.nobr { white-space: pre; }
 </style>

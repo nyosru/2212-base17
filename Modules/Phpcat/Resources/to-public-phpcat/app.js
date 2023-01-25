@@ -24714,9 +24714,10 @@ __webpack_require__.r(__webpack_exports__);
     expose();
     var list = [{
       name: 'Альфа банк платит за регистрацию первой карты',
-      summa: '~ 500р',
+      summa: 'около 500р',
       kto: ['Живёте в России', 'больше 20 лет', 'раньше никогда не было карточки от Альфа Банка'],
-      opis: 'Схема следующая: Пишите мне в тележку @phpcatcom ... "дай ссылку на альфа банк", отправляю вам ссылку, Переходите по ссылке, регистрируетесь и заказываете карту (курьер привезёт бесплатно), пишите мне в тележку @phpcatcom ... что "альфабанк карта на руках" ... пополню вам карту на 20р и нужно что нить купить в магазине незначительное ... потом банк платит мне вознаграждение за вас, мы его делим 50% вам на карту скину'
+      opis: ['Заходите в телеграм бота <A href="https://t.me/UralwebBot" target="_blank" >@Uralweb</a> и пишите ему "дай ссылку на альфа банк" ', 'Отправляет Вам ссылку', 'Переходите по ссылке, регистрируетесь и заказываете карту бесплатная дебетовая (курьер привезёт бесплатно)', 'Пишите в бота "альфабанк карта на руках, меня зовут **** карта номер ***** "', 'Я пополню вам карту на 30р и нужно что нить купить в магазине незначительное "горсть конфет" например (чтобы банк увидел что вы пользуетесь картой) ...', 'Потом банк платит мне вознаграждение за приглашение Вас, и мы его делим 50/50, отправлю денег на карту или на телефон куда скажете (напишите в бота куда прислать)'],
+      potom: 'Можете закрыть карту (в лк) и вопрос закрыт'
     }];
     var __returned__ = {
       list: list
@@ -25763,6 +25764,7 @@ var _hoisted_2 = {
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
   return  true ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "nobr",
     to: {
       name: 'index'
     }
@@ -25772,6 +25774,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }),
     _: 1 /* STABLE */
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "nobr",
     to: {
       name: 'timeline'
     }
@@ -25781,6 +25784,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }),
     _: 1 /* STABLE */
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "nobr",
     to: {
       name: 'tests'
     }
@@ -25790,6 +25794,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }),
     _: 1 /* STABLE */
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "nobr",
     to: {
       name: 'findTorrent'
     }
@@ -25799,6 +25804,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     }),
     _: 1 /* STABLE */
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+    "class": "nobr",
     to: {
       name: 'money'
     }
@@ -25826,37 +25832,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 
 var _hoisted_1 = {
-  "class": "container cont-tl"
+  "class": "container cont-tl mb-5"
 };
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "row justify-content-center"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "col-xl-10 col-12 text-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Заработаем на простых действиях!!"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " Компании готовы платить, помогите им это сделать, весь доход делим пополам ")])], -1 /* HOISTED */);
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-xl-3 col-12"
-}, null, -1 /* HOISTED */);
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Заработаем на простых действиях!!"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " Компании готовы платить, за то что Вы есть! помогите им это сделать, весь доход делим пополам "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, " Только только начинаю такой вид деятельности, ещё не все шаги точно рабочие, могут и не сработать а могут и сработать! давайте сделаем ")])], -1 /* HOISTED */);
+var _hoisted_3 = {
+  "class": "my-4 col-12 text-center"
+};
 var _hoisted_4 = {
-  "class": "col-xl-9 col-12"
+  "class": "col-12"
 };
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-xl-3 col-12"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "получите")], -1 /* HOISTED */);
-var _hoisted_6 = {
-  "class": "col-xl-9 col-12"
+var _hoisted_5 = {
+  "class": "fs-2 bg-warning px-5 py-2 rounded"
 };
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-xl-3 col-12"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "Описание")], -1 /* HOISTED */);
-var _hoisted_8 = {
-  "class": "col-xl-9 col-12"
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col-xl-2 col-12"
+}, null, -1 /* HOISTED */);
+var _hoisted_7 = {
+  "class": "col-xl-10 col-12"
+};
+var _hoisted_8 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "Описание", -1 /* HOISTED */);
+var _hoisted_9 = ["innerHTML"];
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "col-xl-2 col-12"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "После получения печенек)")], -1 /* HOISTED */);
+var _hoisted_11 = {
+  "class": "col-xl-10 col-12"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [_hoisted_2, ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.list, function (i) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
       key: i.name,
       "class": "row justify-content-center"
-    }, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.name), 1 /* TEXT */)]), _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.summa), 1 /* TEXT */), _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.opis), 1 /* TEXT */)]);
+    }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.name), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" получите "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", _hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.summa), 1 /* TEXT */)])]), _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [_hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ol", null, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)(i.opis, function (p) {
+      return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", {
+        key: p
+      }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+        innerHTML: p
+      }, null, 8 /* PROPS */, _hoisted_9)]);
+    }), 128 /* KEYED_FRAGMENT */))])]), _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(i.potom), 1 /* TEXT */)]);
   }), 64 /* STABLE_FRAGMENT */))])]);
 }
 
@@ -31555,7 +31572,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".menu a {\n  background-color: #efefef;\n  padding: 5px 10px;\n  margin-right: 10px;\n  border-radius: 3px;\n}\n.menu a.active {\n  background-color: #55efef;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".menu a {\n  background-color: #efefef;\n  padding: 5px 10px;\n  margin-right: 10px;\n  border-radius: 3px;\n}\n.menu a.active {\n  background-color: #55efef;\n}\n.nobr {\n  white-space: pre;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
