@@ -65,6 +65,7 @@ import PageIndex from './pages/index.vue';
 import PageTimeline from './pages/timeline.vue';
 import PageLern from './pages/lern.vue';
 import PageNews from './pages/News.vue';
+import PageMoney from './pages/Money.vue';
 import PageTests from './pages/Tests.vue';
 import PageTorrent from './pages/Torrent.vue';
 
@@ -107,6 +108,19 @@ const routes = [
         components: {
             //     leftMenu: LeftMenu,
             content: PageNews
+        },
+    },
+
+    {
+        path: "/money",
+        name: "money",
+        //     //   component: Home
+        // component: () => import(/* webpackChunkName: "about" */ './components/didrive/ModItems.vue' ),
+        //     //         // component: About1,
+        // component: PageIndex
+        components: {
+            //     leftMenu: LeftMenu,
+            content: PageMoney
         },
     },
 

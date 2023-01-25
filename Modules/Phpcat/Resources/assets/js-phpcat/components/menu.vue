@@ -13,6 +13,9 @@
       <router-link :to="{ name: 'findTorrent' }">
         Поиск&nbsp;торрентов
       </router-link>
+      <router-link :to="{ name: 'money' }">
+        Деньги за простые действия!!
+      </router-link>
       <!-- <router-link :to="{ name: 'lern' }">Учится, не переучится</router-link> -->
     </div>
   </div>
