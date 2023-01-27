@@ -162,11 +162,13 @@
 </template>
 
 <script>
+
 import { ref } from "vue";
 
 import sendTelegramm from "./../use/sendTelegramm.ts";
 
 export default {
+
   props: {
     titleFrom: { type: String, default: "x" },
   },
