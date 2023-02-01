@@ -1,6 +1,10 @@
 {
     "/Resources/to-public-phpcat/app.js": "/Resources/to-public-phpcat/app.js",
     "/Resources/to-public-phpcat/css.css": "/Resources/to-public-phpcat/css.css",
+    "/public/phpcat/1204diver.jpg": "/public/phpcat/1204diver.jpg",
+    "/public/phpcat/1204spas.jpg": "/public/phpcat/1204spas.jpg",
+    "/public/phpcat/EURUSDm_M1.csv": "/public/phpcat/EURUSDm_M1.csv",
+    "/public/phpcat/EURUSDm_M10.csv": "/public/phpcat/EURUSDm_M10.csv",
     "/public/phpcat/IMG_0004.JPG": "/public/phpcat/IMG_0004.JPG",
     "/public/phpcat/app.js": "/public/phpcat/app.js",
     "/public/phpcat/app.js.LICENSE.txt": "/public/phpcat/app.js.LICENSE.txt",
@@ -30,6 +34,7 @@
     "/public/phpcat/logo/npm.svg": "/public/phpcat/logo/npm.svg",
     "/public/phpcat/logo/php.svg": "/public/phpcat/logo/php.svg",
     "/public/phpcat/logo/postgresql.svg": "/public/phpcat/logo/postgresql.svg",
+    "/public/phpcat/logo/python.png": "/public/phpcat/logo/python.png",
     "/public/phpcat/logo/selenium.png": "/public/phpcat/logo/selenium.png",
     "/public/phpcat/logo/sqlite.svg": "/public/phpcat/logo/sqlite.svg",
     "/public/phpcat/logo/swagger.jpg": "/public/phpcat/logo/swagger.jpg",

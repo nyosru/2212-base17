@@ -109,6 +109,11 @@ export default {
           img: '/phpcat/logo/webpack.svg',
         },
         {
+          name: 'Python',
+          link: 'https://www.python.org/',
+          img: '/phpcat/logo/python.png',
+        },
+        {
           name: 'JQuery',
           link: 'https://ru.wikipedia.org/wiki/JQuery',
           img: '/phpcat/logo/jquery.svg',
