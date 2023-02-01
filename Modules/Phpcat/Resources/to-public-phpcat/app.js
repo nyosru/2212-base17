@@ -24285,8 +24285,10 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         name: 'Selenium',
         link: 'https://www.selenium.dev/',
-        img: '/phpcat/logo/selenium.png'
+        img: '/phpcat/logo/selenium.png',
         // class: 'cub',
+        style_a: '',
+        style_img: 'max-height: 60px; xpadding-top:10px;'
       },
       // {
       //   name: 'IPhone PO (swift)',
@@ -24311,15 +24313,21 @@ __webpack_require__.r(__webpack_exports__);
         name: 'JSon',
         link: 'https://ru.wikipedia.org/wiki/JSON',
         img: '/phpcat/logo/json.svg',
-        "class": 'cub'
+        "class": 'cub',
+        style_a: '',
+        style_img: 'max-height: 60px; xpadding-top:10px;'
       }, {
         name: 'Docker',
         link: 'https://ru.wikipedia.org/wiki/Docker',
-        img: '/phpcat/logo/docker.svg'
+        img: '/phpcat/logo/docker.svg',
+        style_a: '',
+        style_img: 'max-height: 60px; xpadding-top:10px;'
       }, {
         name: 'NPM',
         link: 'https://ru.wikipedia.org/wiki/Npm',
-        img: '/phpcat/logo/npm.svg'
+        img: '/phpcat/logo/npm.svg',
+        style_a: '',
+        style_img: 'max-height: 60px; xpadding-top:10px;'
       }, {
         name: 'WebPack',
         link: 'https://ru.wikipedia.org/wiki/Webpack',
@@ -24339,15 +24347,21 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         name: 'JQuery',
         link: 'https://ru.wikipedia.org/wiki/JQuery',
-        img: '/phpcat/logo/jquery.svg'
+        img: '/phpcat/logo/jquery.svg',
+        style_a: '',
+        style_img: 'max-height: 60px; xpadding-top:10px;'
       }, {
         name: 'AJAX',
         link: 'https://ru.wikipedia.org/wiki/AJAX',
-        img: '/phpcat/logo/ajax.svg'
+        img: '/phpcat/logo/ajax.svg',
+        style_a: '',
+        style_img: 'max-height: 60px; xpadding-top:10px;'
       }, {
         name: 'PHP',
         link: 'https://ru.wikipedia.org/wiki/php',
-        img: '/phpcat/logo/php.svg'
+        img: '/phpcat/logo/php.svg',
+        style_a: '',
+        style_img: 'max-height: 60px; xpadding-top:10px;'
       }, {
         name: 'Composer',
         link: 'https://ru.wikipedia.org/wiki/Composer',
@@ -24385,7 +24399,9 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         name: 'TailWind',
         link: 'https://ru.wikipedia.org/wiki/tailwind',
-        img: '/phpcat/logo/tailwind.svg'
+        img: '/phpcat/logo/tailwind.svg',
+        style_a: '',
+        style_img: 'max-height: 60px; xpadding-top:10px;'
       }, {
         name: 'Bootstrap',
         link: 'https://ru.wikipedia.org/wiki/Bootstrap',
@@ -25519,16 +25535,18 @@ var _hoisted_3 = ["title", "href"];
 var _hoisted_4 = ["src"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"row\">\n    <div class=\"col-12 text-center\">\n      <h1 class=\"pt-5 pb-5\">Использую следующие технологии</h1>\n    </div>\n  </div> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" items {{ items }} "), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($data.items, function (i) {
-    var _i$class;
+    var _i$style_a, _i$class, _i$style_img;
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", {
       key: i.name,
       title: i.name,
       href: i.link,
+      style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)((_i$style_a = i.style_a) !== null && _i$style_a !== void 0 ? _i$style_a : ''),
       target: "_blank"
     }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
       src: i.img,
-      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)((_i$class = i["class"]) !== null && _i$class !== void 0 ? _i$class : '')
-    }, null, 10 /* CLASS, PROPS */, _hoisted_4)], 8 /* PROPS */, _hoisted_3);
+      "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)((_i$class = i["class"]) !== null && _i$class !== void 0 ? _i$class : ''),
+      style: (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeStyle)((_i$style_img = i.style_img) !== null && _i$style_img !== void 0 ? _i$style_img : '')
+    }, null, 14 /* CLASS, STYLE, PROPS */, _hoisted_4)], 12 /* STYLE, PROPS */, _hoisted_3);
   }), 128 /* KEYED_FRAGMENT */))])])], 2112 /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */);
 }
 

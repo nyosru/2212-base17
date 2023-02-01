@@ -12,9 +12,10 @@
         :key="i.name"
         :title="i.name"
         :href="i.link"
+        :style="i.style_a ?? ''"
         target="_blank"
       >
-        <img :src="i.img" :class="i.class ?? ''" />
+        <img :src="i.img" :class="i.class ?? ''" :style="i.style_img ?? ''" />
       </a>
     </div>
   </div>
@@ -57,6 +58,8 @@ export default {
           link: 'https://www.selenium.dev/',
           img: '/phpcat/logo/selenium.png',
           // class: 'cub',
+          style_a: '',
+          style_img: 'max-height: 60px; xpadding-top:10px;',
         },
 
         // {
@@ -89,18 +92,25 @@ export default {
           link: 'https://ru.wikipedia.org/wiki/JSON',
           img: '/phpcat/logo/json.svg',
           class: 'cub',
+          style_a: '',
+          style_img: 'max-height: 60px; xpadding-top:10px;',
         },
 
         {
           name: 'Docker',
           link: 'https://ru.wikipedia.org/wiki/Docker',
           img: '/phpcat/logo/docker.svg',
+          style_a: '',
+          style_img: 'max-height: 60px; xpadding-top:10px;',
         },
 
         {
           name: 'NPM',
           link: 'https://ru.wikipedia.org/wiki/Npm',
           img: '/phpcat/logo/npm.svg',
+          style_a: '',
+          style_img: 'max-height: 60px; xpadding-top:10px;',
+
         },
 
         {
@@ -127,16 +137,23 @@ export default {
           name: 'JQuery',
           link: 'https://ru.wikipedia.org/wiki/JQuery',
           img: '/phpcat/logo/jquery.svg',
+          style_a: '',
+          style_img: 'max-height: 60px; xpadding-top:10px;',
+
         },
         {
           name: 'AJAX',
           link: 'https://ru.wikipedia.org/wiki/AJAX',
           img: '/phpcat/logo/ajax.svg',
+          style_a: '',
+          style_img: 'max-height: 60px; xpadding-top:10px;',
         },
         {
           name: 'PHP',
           link: 'https://ru.wikipedia.org/wiki/php',
           img: '/phpcat/logo/php.svg',
+          style_a: '',
+          style_img: 'max-height: 60px; xpadding-top:10px;',
         },
         {
           name: 'Composer',
@@ -181,6 +198,8 @@ export default {
           name: 'TailWind',
           link: 'https://ru.wikipedia.org/wiki/tailwind',
           img: '/phpcat/logo/tailwind.svg',
+          style_a: '',
+          style_img: 'max-height: 60px; xpadding-top:10px;',
         },
         {
           name: 'Bootstrap',
@@ -262,9 +281,6 @@ export default {
 </script>
 
 <style lang="scss" scope>
-
-
-
 // .imgs_teh {
 //   a {
 //     display: inline-block;
@@ -280,9 +296,7 @@ export default {
 // }
 
 .imgs_teh {
-
   a {
-
     display: inline-block;
     xmax-width: 130px;
     xmax-height: 100px;
@@ -302,7 +316,6 @@ export default {
       .cub {
         xmax-height: 50px;
       }
-
     }
   }
 }
