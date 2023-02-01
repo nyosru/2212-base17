@@ -24329,6 +24329,14 @@ __webpack_require__.r(__webpack_exports__);
         link: 'https://www.python.org/',
         img: '/phpcat/logo/python.png'
       }, {
+        name: 'TensorFlow',
+        link: 'https://www.tensorflow.org',
+        img: '/phpcat/logo/tensorflow.png'
+      }, {
+        name: 'Keras',
+        link: 'https://keras.io',
+        img: '/phpcat/logo/keras.png'
+      }, {
         name: 'JQuery',
         link: 'https://ru.wikipedia.org/wiki/JQuery',
         img: '/phpcat/logo/jquery.svg'
