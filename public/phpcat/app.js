@@ -24276,7 +24276,8 @@ __webpack_require__.r(__webpack_exports__);
         name: 'Vite',
         link: 'https://vitejs.dev/',
         img: '/phpcat/logo/vite.svg',
-        "class": 'cub'
+        "class": 'cub',
+        style_img: 'max-height: 55px; xpadding-top:2px;'
       }, {
         name: 'VUE3.js',
         link: 'https://ru.wikipedia.org/wiki/Vue.js',
@@ -24288,7 +24289,7 @@ __webpack_require__.r(__webpack_exports__);
         img: '/phpcat/logo/selenium.png',
         // class: 'cub',
         style_a: '',
-        style_img: 'max-height: 60px; xpadding-top:10px;'
+        style_img: 'max-height: 55px; padding-top:2px;'
       },
       // {
       //   name: 'IPhone PO (swift)',
@@ -24299,7 +24300,8 @@ __webpack_require__.r(__webpack_exports__);
       {
         name: 'Swagger',
         link: 'https://swagger.io/',
-        img: '/phpcat/logo/swagger.jpg'
+        img: '/phpcat/logo/swagger.jpg',
+        style_img: 'max-height: 80px; padding-top:10px;'
       }, {
         name: 'HTML',
         link: 'https://ru.wikipedia.org/wiki/html',

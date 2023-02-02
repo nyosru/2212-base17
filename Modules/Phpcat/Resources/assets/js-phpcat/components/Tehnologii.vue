@@ -44,6 +44,7 @@ export default {
           link: 'https://vitejs.dev/',
           img: '/phpcat/logo/vite.svg',
           class: 'cub',
+          style_img: 'max-height: 55px; xpadding-top:2px;',
         },
 
         {
@@ -59,7 +60,7 @@ export default {
           img: '/phpcat/logo/selenium.png',
           // class: 'cub',
           style_a: '',
-          style_img: 'max-height: 60px; xpadding-top:10px;',
+          style_img: 'max-height: 55px; padding-top:2px;',
         },
 
         // {
@@ -72,6 +73,7 @@ export default {
           name: 'Swagger',
           link: 'https://swagger.io/',
           img: '/phpcat/logo/swagger.jpg',
+          style_img: 'max-height: 80px; padding-top:10px;',
         },
 
         {
