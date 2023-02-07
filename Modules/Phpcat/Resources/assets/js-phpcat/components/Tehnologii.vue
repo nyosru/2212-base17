@@ -111,19 +111,21 @@ export default {
           link: 'https://ru.wikipedia.org/wiki/Npm',
           img: '/phpcat/logo/npm.svg',
           style_a: '',
-          style_img: 'max-height: 60px; xpadding-top:10px;',
+          style_img: 'max-height: 40px; padding-top:10px;',
 
         },
 
         {
           name: 'WebPack',
           link: 'https://ru.wikipedia.org/wiki/Webpack',
-          img: '/phpcat/logo/webpack.svg',
+          // img: '/phpcat/logo/webpack.svg',
+          img: '/phpcat/logo/webpack.png',
         },
         {
           name: 'Python',
           link: 'https://www.python.org/',
-          img: '/phpcat/logo/python.png',
+          // img: '/phpcat/logo/python.png',
+          img: '/phpcat/logo/python.svg',
         },
         {
           name: 'TensorFlow',
@@ -134,13 +136,14 @@ export default {
           name: 'Keras',
           link: 'https://keras.io',
           img: '/phpcat/logo/keras.png',
+          style_img: 'max-height: 50px; xpadding-top:10px;',
         },
         {
           name: 'JQuery',
           link: 'https://ru.wikipedia.org/wiki/JQuery',
           img: '/phpcat/logo/jquery.svg',
           style_a: '',
-          style_img: 'max-height: 60px; xpadding-top:10px;',
+          style_img: 'max-height: 40px; padding-top:5px;',
 
         },
         {
@@ -148,7 +151,7 @@ export default {
           link: 'https://ru.wikipedia.org/wiki/AJAX',
           img: '/phpcat/logo/ajax.svg',
           style_a: '',
-          style_img: 'max-height: 60px; xpadding-top:10px;',
+          style_img: 'max-height: 50px; xpadding-top:-10px;',
         },
         {
           name: 'PHP',
