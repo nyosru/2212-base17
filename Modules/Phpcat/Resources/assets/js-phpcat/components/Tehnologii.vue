@@ -142,7 +142,7 @@ export default {
           name: 'Redis',
           link: 'https://redis.io',
           img: '/phpcat/logo/redis.svg',
-          // style_img: 'max-height: 50px; xpadding-top:10px;',
+          style_img: 'max-height: 50px; xpadding-top:10px;',
         },
         {
           name: 'JQuery',
