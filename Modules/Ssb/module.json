@@ -1,0 +1,13 @@
+{
+    "name": "Ssb",
+    "alias": "ssb",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Ssb\\Providers\\SsbServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

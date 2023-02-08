@@ -24350,6 +24350,11 @@ __webpack_require__.r(__webpack_exports__);
         img: '/phpcat/logo/keras.png',
         style_img: 'max-height: 50px; xpadding-top:10px;'
       }, {
+        name: 'Redis',
+        link: 'https://redis.io',
+        img: '/phpcat/logo/redis.svg'
+        // style_img: 'max-height: 50px; xpadding-top:10px;',
+      }, {
         name: 'JQuery',
         link: 'https://ru.wikipedia.org/wiki/JQuery',
         img: '/phpcat/logo/jquery.svg',
