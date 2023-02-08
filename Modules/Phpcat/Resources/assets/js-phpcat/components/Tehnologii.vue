@@ -132,18 +132,21 @@ export default {
           link: 'https://www.tensorflow.org',
           img: '/phpcat/logo/tensorflow.png',
         },
+        
         {
           name: 'Keras',
           link: 'https://keras.io',
           img: '/phpcat/logo/keras.png',
           style_img: 'max-height: 50px; xpadding-top:10px;',
         },
+
         {
           name: 'Redis',
           link: 'https://redis.io',
           img: '/phpcat/logo/redis.svg',
           style_img: 'max-height: 40px; padding-top:10px;',
         },
+
         {
           name: 'JQuery',
           link: 'https://ru.wikipedia.org/wiki/JQuery',
