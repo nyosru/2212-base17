@@ -2,6 +2,15 @@
   <div>
     <div class="container">
       <div class="row">
+        
+        <div class="col-12 col-md-6 mt-5">
+          <img src="/ssb/img/leprecon.jpg" style="max-width: 200px; width: 100%;" />
+        </div>
+
+        <div class="col-12 col-md-6 mt-5">
+              Маркетинг инструменты планирование и реализация!
+        </div>
+
         <div class="col-12 col-md-6 mt-5">
           <img src="https://php-cat.com/phpcat/ya6.jpg" style="width: 100%;" />
         </div>
