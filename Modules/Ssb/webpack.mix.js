@@ -26,10 +26,6 @@ mix.copy(
     __dirname + '/Resources/to-public-ssb/',
     __dirname + '/../../public/ssb/',
 )
-mix.copy(
-    __dirname + '/Resources/to-public-ssb/img/',
-    __dirname + '/../../public/ssb/img/',
-)
 
 
 // mix.js(__dirname + '/Resources/assets/js/app.js', 'js/ssb.js')

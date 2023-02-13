@@ -1,15 +1,45 @@
 <template>
   <div>
+
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <div class="container">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <!-- <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg> -->
+        <img
+                  src="/ssb/leprecon.jpg"
+                  style="max-width: 120px;"
+                  class="bi me-2"
+                />
+        <span class="fs-4">Планирование и&nbsp;Реализация Маркетинг&nbsp;идей</span>
+      </a>
+    </div>
+      <!-- <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+      </ul> -->
+    </header>
+
     <div class="container">
       <div class="row">
-        
-        <div class="col-12 col-md-6 mt-5">
-          <img src="/ssb/img/leprecon.jpg" style="max-width: 200px; width: 100%;" />
-        </div>
-
-        <div class="col-12 col-md-6 mt-5">
-              Маркетинг инструменты планирование и реализация!
-        </div>
+        <!-- <div class="col-12">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 col-md-6 mt-5 text-end"
+              style="vertical-align: middle;"
+>
+                <img
+                  src="/ssb/leprecon.jpg"
+                  style="max-width: 200px; width: 100%; float: left;"
+                  class="pr-2"
+                />
+                Маркетинг инструменты планирование и&nbsp;реализация!
+              </div>
+            </div>
+          </div>
+        </div> -->
 
         <div class="col-12 col-md-6 mt-5">
           <img src="https://php-cat.com/phpcat/ya6.jpg" style="width: 100%;" />
