@@ -1,5 +1,5 @@
 const dotenvExpand = require('dotenv-expand')
-dotenvExpand(require('dotenv').config({ path: '../../.env' /*, debug: true*/ }))
+dotenvExpand(require('dotenv').config({ path: '../../.env' /* , debug: true */ }))
 
 const mix = require('laravel-mix')
     // require('laravel-mix-merge-manifest')
@@ -26,6 +26,11 @@ mix.copy(
     __dirname + '/Resources/to-public-ssb/',
     __dirname + '/../../public/ssb/',
 )
+mix.copy(
+    __dirname + '/Resources/to-public-ssb/img/',
+    __dirname + '/../../public/ssb/img/',
+)
+
 
 // mix.js(__dirname + '/Resources/assets/js/app.js', 'js/ssb.js')
 //     .sass( __dirname + '/Resources/assets/sass/app.scss', 'css/ssb.css');
