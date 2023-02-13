@@ -8,12 +8,15 @@
 
        {{-- Laravel Mix - CSS File --}}
        {{-- <link rel="stylesheet" href="{{ mix('css/ssb.css') }}"> --}}
+       <link rel="stylesheet" href="{{ asset('ssb/css.css') }}">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
     </head>
     <body>
         @yield('content')
 
         {{-- Laravel Mix - JS File --}}
-        {{-- <script src="{{ mix('js/ssb.js') }}"></script> --}}
+        {{-- <script src="{{ mix('ssb/app.js') }}"></script> --}}
+        <script src="{{ asset('ssb/app.js') }}?r={{ rand() }}"></script>
     </body>
 </html>

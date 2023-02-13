@@ -1,9 +1,17 @@
 @extends('ssb::layouts.master')
 
 @section('content')
-    {{-- <h1>Hello World</h1> --}}
-    {{-- <p>
-        This view is loaded from module: {!! config('ssb.name') !!}
-    </p> --}}
-    <div id="app"></div>
+    <div id="app">
+
+        {{-- showTime: {{showTime }} --}}
+
+        <div class="col-12 text-center">
+            <router-view name="menu"></router-view>
+        </div>
+
+        <router-view name="content"></router-view>
+
+        {{-- <page-index /> --}}
+
+    </div>
 @endsection
