@@ -12,16 +12,15 @@
     <link rel="stylesheet" href="{{ asset('ssb/css.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
 
-​
-    <!-- Служебные теги: тип и точный адрес страницы -->
+    {{-- <!-- Служебные теги: тип и точный адрес страницы --> --}}
     <meta property="og:type" content="Маркетёр Сергей Бакланов!" />
     <meta property="og:url" content="https://сергейсб.рф/index" />
-    ​
-    <!-- Заголовок и описание для превью -->
+
+    {{-- <!-- Заголовок и описание для превью --> --}}
     <meta property="og:title" content="Специалист по внедрение в дело маркетинг инструментов" />
     <meta property="og:description" content="Сергей Бакланов, занимаюсь планированием, внедрением и улучшением имеющихся маркетинг штучек в вашем деле (любого маштаба и направления)" />
-    ​
-    <!-- Картинка для превью, адрес картинки должен быть полным, с указанием домена сайта -->
+
+    {{-- <!-- Картинка для превью, адрес картинки должен быть полным, с указанием домена сайта --> --}}
     <meta property="og:image" content="https://сергейсб.рф/ssb/preview_for_vk.ssb.jpg" />
 
     <meta property="vk:image" content="https://сергейсб.рф/ssb/preview_for_vk.ssb.jpg" />
