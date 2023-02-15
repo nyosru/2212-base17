@@ -18,7 +18,7 @@
 
     {{-- <!-- Картинка для превью, адрес картинки должен быть полным, с указанием домена сайта --> --}}
     {{-- <meta property="og:image" content="https://сергейсб.рф/ssb/preview_for_vk.ssb.jpg" /> --}}
-    <meta property="og:image" content="https://xn--90adfbu3bff.xn--p1ai/ssb/preview_for_vk.ssb.jpg" />
+    <meta property="og:image" content="https://xn--90adfbu3bff.xn--p1ai/ssb/preview_for_fb.ssb.jpg" />
 
     <meta property="vk:image" content="https://xn--90adfbu3bff.xn--p1ai/ssb/preview_for_vk.ssb.jpg" />
 
