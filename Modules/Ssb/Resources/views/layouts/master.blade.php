@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Маркетёр (реализация маркетинг фишек) Сергей Бакланов</title>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
 
     {{-- <!-- Служебные теги: тип и точный адрес страницы --> --}}
     <meta property="og:type" content="Маркетёр Сергей Бакланов!" />
@@ -31,6 +30,7 @@
     {{-- Laravel Mix - CSS File --}}
     {{-- <link rel="stylesheet" href="{{ mix('css/ssb.css') }}"> --}}
     <link rel="stylesheet" href="{{ asset('ssb/css.css') }}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
 
 </head>
 
