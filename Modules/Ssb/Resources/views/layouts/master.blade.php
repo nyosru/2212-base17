@@ -20,12 +20,12 @@
     {{-- <meta property="og:image" content="https://сергейсб.рф/ssb/preview_for_vk.ssb.jpg" /> --}}
     <meta property="og:image" content="https://xn--90adfbu3bff.xn--p1ai/ssb/preview_for_vk.ssb.jpg" />
 
-    <meta property="vk:image" content="https://сергейсб.рф/ssb/preview_for_vk.ssb.jpg" />
+    <meta property="vk:image" content="https://xn--90adfbu3bff.xn--p1ai/ssb/preview_for_vk.ssb.jpg" />
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Маркетёр Сергей Бакланов!">
     <meta name="twitter:description" content="Сергей Бакланов, занимаюсь планированием, внедрением и улучшением имеющихся маркетинг штучек в вашем деле">
-    <meta name="twitter:image" content="https://сергейсб.рф/ssb/preview_for_vk.ssb.jpg">
+    <meta name="twitter:image" content="https://xn--90adfbu3bff.xn--p1ai/ssb/preview_for_vk.ssb.jpg">
 
 
     {{-- Laravel Mix - CSS File --}}
