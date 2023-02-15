@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Маркетёр (реализация маркетинг фишек) Сергей Бакланов</title>
 
+    <link rel="icon" href="/ssb/favicon.ico" type="image/x-icon" />
 
     {{-- <!-- Служебные теги: тип и точный адрес страницы --> --}}
     <meta property="og:type" content="Маркетёр Сергей Бакланов!" />
