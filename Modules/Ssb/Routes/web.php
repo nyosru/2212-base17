@@ -8,5 +8,9 @@ $appRoutes1 = function() {
 };
 
 Route::group(array('domain' => 'ssb.dev.ru'), $appRoutes1);
+
 // сергейсб.рф
 Route::group(array('domain' => 'xn--90adfbu3bff.xn--p1ai'), $appRoutes1);
+
+// мистерзелёнка
+Route::group(array('domain' => 'xn--80ajahdpgdo0ajm4r.xn--p1ai'), $appRoutes1);
