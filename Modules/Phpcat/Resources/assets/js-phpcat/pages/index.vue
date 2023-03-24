@@ -1,5 +1,9 @@
 <template>
   <div>
+    <div style="text-align:Center;padding: 15px;" >
+    Собираю коллекцию кружек со&nbsp;всех&nbsp;стран и&nbsp;городов, пить&nbsp;горячий сладкий кофе&nbsp;с&nbsp;молоком. Можете добавить свою частичку в&nbsp;коллекцию, было бы&nbsp;здорово!
+    <a href="https://кружки.сергейсб.рф" target="_blank" >кружки.сергейсб.рф</a>
+    </div>
     <tehnologii />
   </div>
 </template>
