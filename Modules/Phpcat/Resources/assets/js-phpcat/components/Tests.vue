@@ -1,6 +1,7 @@
 <template>
   <div>
     <div class="container zadachi">
+
       <tests-form v-if="$route.params.action == 'ss'" />
 
       <transition name="fade">
@@ -68,6 +69,7 @@
           </div>
         </div>
       </transition>
+      
     </div>
   </div>
 </template>
