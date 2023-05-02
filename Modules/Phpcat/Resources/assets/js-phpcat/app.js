@@ -138,6 +138,19 @@ const routes = [
     },
 
     {
+        path: "/tests/ss2",
+        name: "tests",
+        //     //   component: Home
+        // component: () => import(/* webpackChunkName: "about" */ './components/didrive/ModItems.vue' ),
+        //     //         // component: About1,
+        // component: PageIndex
+        components: {
+            //     leftMenu: LeftMenu,
+            content: PageTests
+        }
+    },
+
+    {
         path: "/find-torrent/:search?",
         name: "findTorrent",
         //     //   component: Home
