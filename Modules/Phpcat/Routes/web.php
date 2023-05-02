@@ -5,6 +5,14 @@ use Modules\Phpcat\Http\Controllers\PhpcatController;
 $appRoutes = function() {
     Route::get('/', [PhpcatController::class,'index']);
     Route::get('{any?}', [PhpcatController::class,'index']);
+
+Route::fallback([PhpcatController::class,'index']);
+// Route::fallback(function () {
+//     // Route::get('/', fn () => 
+//     return view('welcome', ['HTTP_HOST' => $_SERVER['HTTP_HOST']]);
+// })
+// ;
+
 };
 
 Route::group(array('domain' => 'php-cat.com'), $appRoutes);
