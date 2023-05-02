@@ -25,7 +25,7 @@ const getI = async() => {
             errored.value = true
                 // return 'errored';
         });
-
+    return await res;
 }
 
 
