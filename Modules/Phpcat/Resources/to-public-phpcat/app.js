@@ -24830,10 +24830,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Resources/assets/js-phpcat/pages/Tests.vue?vue&type=script&lang=js":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Resources/assets/js-phpcat/pages/Tests.vue?vue&type=script&lang=js ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Resources/assets/js-phpcat/pages/Tests.vue?vue&type=script&setup=true&lang=js":
+/*!*******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Resources/assets/js-phpcat/pages/Tests.vue?vue&type=script&setup=true&lang=js ***!
+  \*******************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -24842,122 +24842,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _components_Tests_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Tests.vue */ "./Resources/assets/js-phpcat/components/Tests.vue");
-// import { ref } from "vue";
-// import sendTelegramm from "./../use/sendTelegramm.ts";
-
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  components: {
-    news: _components_Tests_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
-  },
-  //   props: {
-  //     titleFrom: { type: String, default: "x" },
-  //   },
-  data: function data() {
-    return {
-      items: [{
-        name: "Laravel",
-        link: "https://ru.wikipedia.org/wiki/laravel",
-        img: "/phpcat/logo/laravel.svg"
-      }, {
-        name: "VUE3.js",
-        link: "https://ru.wikipedia.org/wiki/Vue.js",
-        img: "/phpcat/logo/vue.svg"
-      }, {
-        name: "HTML",
-        link: "https://ru.wikipedia.org/wiki/html",
-        img: "/phpcat/logo/html5.svg"
-      }, {
-        name: "CSS",
-        link: "https://ru.wikipedia.org/wiki/css",
-        img: "/phpcat/logo/css3.svg"
-      }, {
-        name: "XML",
-        link: "https://ru.wikipedia.org/wiki/XML",
-        img: "/phpcat/logo/xml.svg"
-      }, {
-        name: "JSon",
-        link: "https://ru.wikipedia.org/wiki/JSON",
-        img: "/phpcat/logo/json.svg"
-      }, {
-        name: "NPM",
-        link: "https://ru.wikipedia.org/wiki/Npm",
-        img: "/phpcat/logo/npm.svg"
-      }, {
-        name: "WebPack",
-        link: "https://ru.wikipedia.org/wiki/Webpack",
-        img: "/phpcat/logo/webpack.svg"
-      }, {
-        name: "JQuery",
-        link: "https://ru.wikipedia.org/wiki/JQuery",
-        img: "/phpcat/logo/jquery.svg"
-      }, {
-        name: "AJAX",
-        link: "https://ru.wikipedia.org/wiki/AJAX",
-        img: "/phpcat/logo/ajax.svg"
-      }, {
-        name: "PHP",
-        link: "https://ru.wikipedia.org/wiki/php",
-        img: "/phpcat/logo/php.svg"
-      }, {
-        name: "Composer",
-        link: "https://ru.wikipedia.org/wiki/Composer",
-        img: "/phpcat/logo/composer.png"
-      }, {
-        name: "MySql",
-        link: "https://ru.wikipedia.org/wiki/mysql",
-        img: "/phpcat/logo/mysql.png"
-      }]
-
-      // " alt="MySql" border="1">
-      // </a><a href="https://ru.wikipedia.org/wiki/postresql" target="_blank"
-      // title="PostgreSQL"><img src="/vendor/didrive/libs/img/logo/postgresql.svg" alt="PostgreSQL"
-      // border="1"></a><a href="https://ru.wikipedia.org/wiki/sqlite" target="_blank" title="SQLite">
-      // </a><a href="https://ru.wikipedia.org/wiki/postresql" target="_blank"
-      // title="PostgreSQL"><img src="/vendor/didrive/libs/img/logo/postgresql.svg" alt="PostgreSQL"
-      // border="1"></a><a href="https://ru.wikipedia.org/wiki/sqlite" target="_blank" title="SQLite">
-      // <img src="/vendor/didrive/libs/img/logo/sqlite.svg" alt="SQLite" border="1"></a></div>
-
-      // }
-      //       formName: "",
-      //       formPhone: "",
-      //       formMsg: "",
+  __name: 'Tests',
+  setup: function setup(__props, _ref) {
+    var expose = _ref.expose;
+    expose();
+    var __returned__ = {
+      componentTests: _components_Tests_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
     };
-  },
-  setup: function setup(props) {
-    // const result = ref("x");
-    // const loading = ref(false);
-
-    return {
-      //   result,
-      //   loading,
-    };
-  } //   //   mounted() {
-  //   //     console.log("Component mounted.");
-  //   //   },
-  //   methods: {
-  //     async formSend() {
-  //       //   console.log(2222, this.formName, this.formPhone, this.formMsg);
-  //       //   console.log(2222, this.formPhone, this.titleFrom);
-  //       this.loading = true;
-  //       const { sendToTelegramm } = sendTelegramm();
-  //       let ww = await sendToTelegramm(
-  //         "Где: " +
-  //           this.titleFrom +
-  //           "<br>" +
-  //           "Как зовут: " +
-  //           this.formName +
-  //           "<br>" +
-  //           "Телефон: " +
-  //           this.formPhone +
-  //           "<br>" +
-  //           "Сообщение: " +
-  //           this.formMsg
-  //       );
-  //       //   console.log('ww',ww);
-  //       this.result = ww;
-  //     },
-  //   },
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
+  }
 });
 
 /***/ }),
@@ -26140,15 +26039,8 @@ var _hoisted_2 = {
 var _hoisted_3 = {
   "class": "col-xl-10 col-12"
 };
-var _hoisted_4 = {
-  key: 0,
-  "class": "timeline timeline-line-solid"
-};
-var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<span class=\"timeline-label\"><span class=\"label\">2021</span></span><div class=\"timeline-item\"><div class=\"timeline-point timeline-point\"></div><div class=\"timeline-event\"><div class=\"widget has-shadow\"><div class=\"widget-header d-flex align-items-center\"><div class=\"user-image\"><img class=\"rounded-circle\" src=\"https://bootdey.com/img/Content/avatar/avatar1.png\" alt=\"...\"></div><h4>новый DiDrive</h4></div><div class=\"widget-body\"><small style=\"color:gray;\" class=\"xtime-right\">26-09-2021</small><p> Идея заключается в следующем: создать систему управления данными ... как отдельный стик на рабочем столе бизнеса. Система подключается к базе данных и помогает в норм интерфейсе управлять данными. Бета версия системы управления готова! и запущена на ряде проектов. </p></div></div></div></div><div class=\"timeline-item\"><div class=\"timeline-point timeline-point\"></div><div class=\"timeline-event\"><div class=\"widget has-shadow\"><div class=\"widget-header d-flex align-items-center\"><div class=\"user-image\"><img class=\"rounded-circle\" src=\"https://bootdey.com/img/Content/avatar/avatar1.png\" alt=\"...\"></div><h4>VUE3 в кармане</h4></div><div class=\"widget-body\"><small style=\"color:gray;\" class=\"xtime-right\">01-09-2021</small><p> Проведены тесты, собраны первые сайты, VUE 3 с его прекрасным композишн апи в работе </p></div></div></div></div><div class=\"timeline-item\"><div class=\"timeline-point timeline-point\"></div><div class=\"timeline-event\"><div class=\"widget has-shadow\"><div class=\"widget-header d-flex align-items-center\"><div class=\"user-image\"><img class=\"rounded-circle\" src=\"https://bootdey.com/img/Content/avatar/avatar1.png\" alt=\"...\"></div><h4>Laravel seeder и фабрики БД</h4></div><div class=\"widget-body\"><small style=\"color:gray;\" class=\"xtime-right\">22-05-2021</small><p> Первый раз ( как в первый класс )) использую данные технологии в боевом сайте, очень удобно освобождает массу времени и не нужно писать 100-ни строк кода </p></div></div></div></div><div class=\"timeline-item\"><div class=\"timeline-point timeline-point\"></div><div class=\"timeline-event\"><div class=\"widget has-shadow\"><div class=\"widget-header d-flex align-items-center\"><div class=\"user-image\"><img class=\"rounded-circle\" src=\"https://bootdey.com/img/Content/avatar/avatar1.png\" alt=\"...\"></div><h4>Создал эту тайм линию</h4></div><div class=\"widget-body\"><small style=\"color:gray;\" class=\"xtime-right\">30-04-2021</small><p>Взял и сделал, интересное решение</p></div></div></div></div><div class=\"timeline-item\"><div class=\"timeline-point timeline-point\"></div><div class=\"timeline-event\"><div class=\"widget has-shadow\"><div class=\"widget-header d-flex align-items-center\"><div class=\"user-image\"><img class=\"rounded-circle\" src=\"https://bootdey.com/img/Content/avatar/avatar1.png\" alt=\"...\"></div><h4>Старт работ по созданию сайта бесплатных обьявлений бу72.рф</h4></div><div class=\"widget-body\"><a href=\"//бу72.рф\" style=\"margin-left:10px;\" target=\"_blank\">бу72.рф</a><p>Делаю свою досочку обьявлений для Тюмени</p><div class=\"block_tehs\"><b>laravel</b><b>php</b><b>mysql</b><b>telegram</b><b>api</b></div></div></div></div></div><a href=\"/010.timeline/\"><span class=\"timeline-label\"><span class=\"label bg-primary\"> Посмотреть полную версию </span></span></a>", 7);
-var _hoisted_12 = [_hoisted_5];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_news = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("news");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_news),  false ? (0) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["componentTests"])])])])]);
 }
 
 /***/ }),
@@ -53083,14 +52975,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Tests_vue_vue_type_template_id_044620d6__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Tests.vue?vue&type=template&id=044620d6 */ "./Resources/assets/js-phpcat/pages/Tests.vue?vue&type=template&id=044620d6");
-/* harmony import */ var _Tests_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tests.vue?vue&type=script&lang=js */ "./Resources/assets/js-phpcat/pages/Tests.vue?vue&type=script&lang=js");
+/* harmony import */ var _Tests_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Tests.vue?vue&type=script&setup=true&lang=js */ "./Resources/assets/js-phpcat/pages/Tests.vue?vue&type=script&setup=true&lang=js");
 /* harmony import */ var _Users_phpcat_Documents_00createSite_2301_base17_Modules_Phpcat_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,_Users_phpcat_Documents_00createSite_2301_base17_Modules_Phpcat_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Tests_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Tests_vue_vue_type_template_id_044620d6__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"Resources/assets/js-phpcat/pages/Tests.vue"]])
+const __exports__ = /*#__PURE__*/(0,_Users_phpcat_Documents_00createSite_2301_base17_Modules_Phpcat_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_Tests_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Tests_vue_vue_type_template_id_044620d6__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"Resources/assets/js-phpcat/pages/Tests.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -53402,18 +53294,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./Resources/assets/js-phpcat/pages/Tests.vue?vue&type=script&lang=js":
-/*!****************************************************************************!*\
-  !*** ./Resources/assets/js-phpcat/pages/Tests.vue?vue&type=script&lang=js ***!
-  \****************************************************************************/
+/***/ "./Resources/assets/js-phpcat/pages/Tests.vue?vue&type=script&setup=true&lang=js":
+/*!***************************************************************************************!*\
+  !*** ./Resources/assets/js-phpcat/pages/Tests.vue?vue&type=script&setup=true&lang=js ***!
+  \***************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Tests_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Tests_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Tests_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Tests.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Resources/assets/js-phpcat/pages/Tests.vue?vue&type=script&lang=js");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Tests_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Tests.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Resources/assets/js-phpcat/pages/Tests.vue?vue&type=script&setup=true&lang=js");
  
 
 /***/ }),
