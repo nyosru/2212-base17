@@ -25735,6 +25735,7 @@ var _hoisted_28 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "class": "btn btn-info"
 }, "добавить", -1 /* HOISTED */);
 var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
+var _hoisted_30 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" форма "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("form", {
@@ -25781,7 +25782,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return $setup.link3 = $event;
     }),
     "class": "form-control"
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.link3]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <br />\n          картинка\n          <br />\n          <input type=\"file\" @change=\"fileAdd\" class=\"form-control\" />\n          "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ссылка\n          <br />\n          <input type=\"text\" v-model=\"link\" class=\"form-control\" />\n          <br /> "), _hoisted_26, _hoisted_27, _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" result " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.result) + " ", 1 /* TEXT */), _hoisted_29], 40 /* PROPS, HYDRATE_EVENTS */, _hoisted_4)])])]);
+  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.link3]]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <br />\n          картинка\n          <br />\n          <input type=\"file\" @change=\"fileAdd\" class=\"form-control\" />\n          "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ссылка\n          <br />\n          <input type=\"text\" v-model=\"link\" class=\"form-control\" />\n          <br /> "), _hoisted_26, _hoisted_27, _hoisted_28, _hoisted_29], 40 /* PROPS, HYDRATE_EVENTS */, _hoisted_4), _hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" result: " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)($setup.result), 1 /* TEXT */)])])]);
 }
 
 /***/ }),

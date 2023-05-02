@@ -59,9 +59,11 @@
           <br />
           <br />
           <button type="submit" class="btn btn-info">добавить</button>
-          result {{ result }}
+
           <br />
         </form>
+        <br />
+        result: {{ result }}
       </div>
     </div>
   </div>
