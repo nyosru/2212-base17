@@ -28,6 +28,8 @@ Route::fallback(function () {
     // Route::get('/', fn () => 
     return view('welcome', ['HTTP_HOST' => $_SERVER['HTTP_HOST']]);
 });
+
+
 // Route::get('/', fn () => view('welcome'))->name('home');
 // Route::any('/{any}', fn () => view('welcome'))->where('any', '.*');
 
