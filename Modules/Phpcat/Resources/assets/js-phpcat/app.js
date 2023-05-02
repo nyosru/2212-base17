@@ -140,7 +140,7 @@ const routes = [
 
     {
         path: "/tests-ss",
-        name: "tests",
+        name: "tests2",
         //     //   component: Home
         // component: () => import(/* webpackChunkName: "about" */ './components/didrive/ModItems.vue' ),
         //     //         // component: About1,

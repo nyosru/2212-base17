@@ -3,7 +3,7 @@
     <div class="container cont-tl">
       <div class="row justify-content-center">
         <div class="col-xl-10 col-12">
-          <news />
+          <testForm />
 
           <div v-if="1 == 2" class="timeline timeline-line-solid">
             <span class="timeline-label"><span class="label">2021</span></span>
@@ -136,6 +136,7 @@
               ></a
             >
           </div>
+          
         </div>
       </div>
     </div>
@@ -146,7 +147,7 @@
 // import { ref } from "vue";
 // import sendTelegramm from "./../use/sendTelegramm.ts";
 
-import news from "../components/Tests.vue";
+import testForm from "../components/TestsForm.vue";
 
 export default {
   components: { news },

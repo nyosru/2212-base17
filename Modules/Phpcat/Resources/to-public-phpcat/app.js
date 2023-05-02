@@ -23278,7 +23278,7 @@ var routes = [
   }
 }, {
   path: "/tests-ss",
-  name: "tests",
+  name: "tests2",
   //     //   component: Home
   // component: () => import(/* webpackChunkName: "about" */ './components/didrive/ModItems.vue' ),
   //     //         // component: About1,
@@ -24966,14 +24966,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _components_Tests_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Tests.vue */ "./Resources/assets/js-phpcat/components/Tests.vue");
+/* harmony import */ var _components_TestsForm_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/TestsForm.vue */ "./Resources/assets/js-phpcat/components/TestsForm.vue");
 // import { ref } from "vue";
 // import sendTelegramm from "./../use/sendTelegramm.ts";
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
-    news: _components_Tests_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+    news: news
   },
   //   props: {
   //     titleFrom: { type: String, default: "x" },
@@ -26175,8 +26175,8 @@ var _hoisted_4 = {
 var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<span class=\"timeline-label\"><span class=\"label\">2021</span></span><div class=\"timeline-item\"><div class=\"timeline-point timeline-point\"></div><div class=\"timeline-event\"><div class=\"widget has-shadow\"><div class=\"widget-header d-flex align-items-center\"><div class=\"user-image\"><img class=\"rounded-circle\" src=\"https://bootdey.com/img/Content/avatar/avatar1.png\" alt=\"...\"></div><h4>новый DiDrive</h4></div><div class=\"widget-body\"><small style=\"color:gray;\" class=\"xtime-right\">26-09-2021</small><p> Идея заключается в следующем: создать систему управления данными ... как отдельный стик на рабочем столе бизнеса. Система подключается к базе данных и помогает в норм интерфейсе управлять данными. Бета версия системы управления готова! и запущена на ряде проектов. </p></div></div></div></div><div class=\"timeline-item\"><div class=\"timeline-point timeline-point\"></div><div class=\"timeline-event\"><div class=\"widget has-shadow\"><div class=\"widget-header d-flex align-items-center\"><div class=\"user-image\"><img class=\"rounded-circle\" src=\"https://bootdey.com/img/Content/avatar/avatar1.png\" alt=\"...\"></div><h4>VUE3 в кармане</h4></div><div class=\"widget-body\"><small style=\"color:gray;\" class=\"xtime-right\">01-09-2021</small><p> Проведены тесты, собраны первые сайты, VUE 3 с его прекрасным композишн апи в работе </p></div></div></div></div><div class=\"timeline-item\"><div class=\"timeline-point timeline-point\"></div><div class=\"timeline-event\"><div class=\"widget has-shadow\"><div class=\"widget-header d-flex align-items-center\"><div class=\"user-image\"><img class=\"rounded-circle\" src=\"https://bootdey.com/img/Content/avatar/avatar1.png\" alt=\"...\"></div><h4>Laravel seeder и фабрики БД</h4></div><div class=\"widget-body\"><small style=\"color:gray;\" class=\"xtime-right\">22-05-2021</small><p> Первый раз ( как в первый класс )) использую данные технологии в боевом сайте, очень удобно освобождает массу времени и не нужно писать 100-ни строк кода </p></div></div></div></div><div class=\"timeline-item\"><div class=\"timeline-point timeline-point\"></div><div class=\"timeline-event\"><div class=\"widget has-shadow\"><div class=\"widget-header d-flex align-items-center\"><div class=\"user-image\"><img class=\"rounded-circle\" src=\"https://bootdey.com/img/Content/avatar/avatar1.png\" alt=\"...\"></div><h4>Создал эту тайм линию</h4></div><div class=\"widget-body\"><small style=\"color:gray;\" class=\"xtime-right\">30-04-2021</small><p>Взял и сделал, интересное решение</p></div></div></div></div><div class=\"timeline-item\"><div class=\"timeline-point timeline-point\"></div><div class=\"timeline-event\"><div class=\"widget has-shadow\"><div class=\"widget-header d-flex align-items-center\"><div class=\"user-image\"><img class=\"rounded-circle\" src=\"https://bootdey.com/img/Content/avatar/avatar1.png\" alt=\"...\"></div><h4>Старт работ по созданию сайта бесплатных обьявлений бу72.рф</h4></div><div class=\"widget-body\"><a href=\"//бу72.рф\" style=\"margin-left:10px;\" target=\"_blank\">бу72.рф</a><p>Делаю свою досочку обьявлений для Тюмени</p><div class=\"block_tehs\"><b>laravel</b><b>php</b><b>mysql</b><b>telegram</b><b>api</b></div></div></div></div></div><a href=\"/010.timeline/\"><span class=\"timeline-label\"><span class=\"label bg-primary\"> Посмотреть полную версию </span></span></a>", 7);
 var _hoisted_12 = [_hoisted_5];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_news = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("news");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_news),  false ? (0) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])]);
+  var _component_testForm = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("testForm");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_testForm),  false ? (0) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)])])])]);
 }
 
 /***/ }),
