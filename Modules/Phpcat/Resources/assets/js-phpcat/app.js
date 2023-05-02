@@ -138,18 +138,18 @@ const routes = [
         }
     },
 
-    {
-        path: "/tests-ss",
-        name: "tests2",
-        //     //   component: Home
-        // component: () => import(/* webpackChunkName: "about" */ './components/didrive/ModItems.vue' ),
-        //     //         // component: About1,
-        // component: PageIndex
-        components: {
-            //     leftMenu: LeftMenu,
-            content: PageTests2
-        }
-    },
+    // {
+    //     path: "/tests-ss",
+    //     name: "tests2",
+    //     //     //   component: Home
+    //     // component: () => import(/* webpackChunkName: "about" */ './components/didrive/ModItems.vue' ),
+    //     //     //         // component: About1,
+    //     // component: PageIndex
+    //     components: {
+    //         //     leftMenu: LeftMenu,
+    //         content: PageTests2
+    //     }
+    // },
 
     {
         path: "/find-torrent/:search?",

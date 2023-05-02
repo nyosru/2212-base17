@@ -136,7 +136,7 @@
               ></a
             >
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -150,7 +150,7 @@
 import testForm from "../components/TestsForm.vue";
 
 export default {
-  components: { news },
+  components: { testForm },
 
   //   props: {
   //     titleFrom: { type: String, default: "x" },

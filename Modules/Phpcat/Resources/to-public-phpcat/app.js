@@ -23276,18 +23276,21 @@ var routes = [
     //     leftMenu: LeftMenu,
     content: _pages_Tests_vue__WEBPACK_IMPORTED_MODULE_8__["default"]
   }
-}, {
-  path: "/tests-ss",
-  name: "tests2",
-  //     //   component: Home
-  // component: () => import(/* webpackChunkName: "about" */ './components/didrive/ModItems.vue' ),
-  //     //         // component: About1,
-  // component: PageIndex
-  components: {
-    //     leftMenu: LeftMenu,
-    content: _pages_Tests2_vue__WEBPACK_IMPORTED_MODULE_9__["default"]
-  }
-}, {
+},
+// {
+//     path: "/tests-ss",
+//     name: "tests2",
+//     //     //   component: Home
+//     // component: () => import(/* webpackChunkName: "about" */ './components/didrive/ModItems.vue' ),
+//     //     //         // component: About1,
+//     // component: PageIndex
+//     components: {
+//         //     leftMenu: LeftMenu,
+//         content: PageTests2
+//     }
+// },
+
+{
   path: "/find-torrent/:search?",
   name: "findTorrent",
   //     //   component: Home
@@ -24297,6 +24300,10 @@ __webpack_require__.r(__webpack_exports__);
         img: '/phpcat/logo/vue.svg',
         "class": 'cub'
       }, {
+        name: 'NUXT3',
+        link: 'https://nuxt.com/',
+        img: '/phpcat/logo/nuxt3.svg'
+      }, {
         name: 'Selenium',
         link: 'https://www.selenium.dev/',
         img: '/phpcat/logo/selenium.png',
@@ -24973,7 +24980,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
-    news: news
+    testForm: _components_TestsForm_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   //   props: {
   //     titleFrom: { type: String, default: "x" },
