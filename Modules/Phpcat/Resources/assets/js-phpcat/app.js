@@ -67,6 +67,7 @@ import PageLern from './pages/lern.vue';
 import PageNews from './pages/News.vue';
 import PageMoney from './pages/Money.vue';
 import PageTests from './pages/Tests.vue';
+import PageTests2 from './pages/Tests2.vue';
 import PageTorrent from './pages/Torrent.vue';
 
 
@@ -138,7 +139,7 @@ const routes = [
     },
 
     {
-        path: "/tests/ss2",
+        path: "/tests-ss",
         name: "tests",
         //     //   component: Home
         // component: () => import(/* webpackChunkName: "about" */ './components/didrive/ModItems.vue' ),
@@ -146,7 +147,7 @@ const routes = [
         // component: PageIndex
         components: {
             //     leftMenu: LeftMenu,
-            content: PageTests
+            content: PageTests2
         }
     },
 
