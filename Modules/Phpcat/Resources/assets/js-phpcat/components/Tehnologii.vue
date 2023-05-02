@@ -33,6 +33,7 @@ export default {
   data() {
     return {
       items: [
+        
         {
           name: 'Laravel',
           link: 'https://ru.wikipedia.org/wiki/laravel',
@@ -52,6 +53,12 @@ export default {
           link: 'https://ru.wikipedia.org/wiki/Vue.js',
           img: '/phpcat/logo/vue.svg',
           class: 'cub',
+        },
+
+        {
+          name: 'NUXT3',
+          link: 'https://nuxt.com/',
+          img: '/phpcat/logo/nuxt3.svg',          
         },
 
         {
