@@ -25429,7 +25429,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           style: {
             "width": "100%"
           },
-          src: '/phpcat/' + k.img
+          src: k.img
         }, null, 8 /* PROPS */, _hoisted_14)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_15, k.link && k.link.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", {
           key: 3,
           href: k.link,

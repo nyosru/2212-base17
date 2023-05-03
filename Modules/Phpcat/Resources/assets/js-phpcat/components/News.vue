@@ -54,7 +54,7 @@
                       <img
                         v-if="k.img && k.img.length"
                         style="width: 100%"
-                        :src="'/phpcat/'+k.img"
+                        :src="k.img"
                       />
                       <br />
                       <a :href="k.link" target="_blank" v-if="k.link && k.link.length">

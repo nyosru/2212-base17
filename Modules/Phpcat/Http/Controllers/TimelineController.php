@@ -50,7 +50,7 @@ class TimelineController extends Controller
             $name = time().rand(1,100).'.'.$request->img->extension();
             if ($request->img->move(public_path('phpcat/'), $name)) {
                 // $data = Image::create(["imageName" => $name]);
-                $validated['img'] = $name;
+                $validated['img'] = '/phpcat/'.$name;
             }else{
                 if( isset($validated['img']) )
                 unset($validated['img']);
