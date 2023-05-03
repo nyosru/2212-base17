@@ -14,7 +14,7 @@ class UslugiAddPoleKey extends Migration
     public function up()
     {
         Schema::table('zemk_uslugis', function (Blueprint $table) {
-            $table->string('key')->index();
+            $table->string('key')->index()->nullable();
         });
     }
 
