@@ -62,7 +62,7 @@ const addI = async(head, date, text, code = '', link1 = '', link2 = '', link3 = 
     if (link2 != '') { formData.append('link2', link2) }
     if (link3 != '') { formData.append('link3', link3) }
 
-    let res = await axios.post('/api/tests', formData, config)
+    let res = await axios.post('/api/phpcat/tests', formData, config)
         .then(response => console.log(response.data.message))
         .catch(error => console.log(error))
 

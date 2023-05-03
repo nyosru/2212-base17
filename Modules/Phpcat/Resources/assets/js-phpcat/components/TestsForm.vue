@@ -104,14 +104,14 @@ const submitForm = () => {
     link2.value,
     link3.value,
   )
-  head.value = ''
-  date.value = ''
-  text.value = ''
-  code.value = ''
-  link1.value = ''
-  link2.value = ''
-  link3.value = ''
-  //   this.attachment = {};
+  // head.value = ''
+  // date.value = ''
+  // text.value = ''
+  // code.value = ''
+  // link1.value = ''
+  // link2.value = ''
+  // link3.value = ''
+  // //   this.attachment = {};
   getI()
 }
 </script>

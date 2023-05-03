@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Modules\Phpcat\Database\Seeders\PhpcatDatabaseSeeder;
 use Modules\Zemk\Database\Seeders\ZemkNewsTableSeeder;
 use Modules\Zemk\Database\Seeders\ZemkUserTableSeeder;
 use Modules\Zemk\Entities\ZemkNews;
@@ -24,7 +25,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
                 ZemkUserTableSeeder::class,
                 ZemkNewsTableSeeder::class,
-                
+                PhpcatDatabaseSeeder::class,
         ]);
 
         // \App\Models\User::factory(10)->create();

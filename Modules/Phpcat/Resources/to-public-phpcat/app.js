@@ -23792,7 +23792,7 @@ var addI = /*#__PURE__*/function () {
             formData.append('link3', link3);
           }
           _context3.next = 15;
-          return axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/tests', formData, config).then(function (response) {
+          return axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/phpcat/tests', formData, config).then(function (response) {
             return console.log(response.data.message);
           })["catch"](function (error) {
             return console.log(error);
@@ -24617,14 +24617,14 @@ __webpack_require__.r(__webpack_exports__);
         addI = _tests.addI,
         getI = _tests.getI;
       result = addI(head.value, date.value, text.value, code.value, link1.value, link2.value, link3.value);
-      head.value = '';
-      date.value = '';
-      text.value = '';
-      code.value = '';
-      link1.value = '';
-      link2.value = '';
-      link3.value = '';
-      //   this.attachment = {};
+      // head.value = ''
+      // date.value = ''
+      // text.value = ''
+      // code.value = ''
+      // link1.value = ''
+      // link2.value = ''
+      // link3.value = ''
+      // //   this.attachment = {};
       getI();
     };
     var __returned__ = {
