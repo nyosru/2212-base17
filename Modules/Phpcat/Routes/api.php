@@ -1,17 +1,16 @@
 <?php
 
-use Illuminate\Http\Request;
-use Modules\Phpcat\Entities\PhpcatNews as EntitiesPhpcatNews;
-use Modules\Phpcat\Entities\PhpcatTest;
-use Modules\Phpcat\Http\Controllers\PhpcatTestsController;
 use Modules\Phpcat\Http\Controllers\TestController;
-use Modules\Phpcat\Transformers\PhpcatNewsResource;
-use Modules\Phpcat\Transformers\PhpcatTestResource;
+use Modules\Phpcat\Http\Controllers\TimelineController;
 
-Route::get('/phpcat/news', function (Request $request) {
-    return new PhpcatNewsResource( EntitiesPhpcatNews::all()->sortByDesc('date') );
-});
+// Route::get('/phpcat/news', function () {
+//     // return new PhpcatNewsResource( EntitiesPhpcatNews::all()->sortByDesc('date') );
+//     return new PhpcatNewsCollection( EntitiesPhpcatNews::all()->sortByDesc('date') );
+// });
 
+
+Route::get('/phpcat/news', [ TimelineController::class , 'index' ] );
+Route::post('/phpcat/news', [ TimelineController::class , 'store' ] );
 
 Route::get('/phpcat/tests', [ TestController::class , 'index' ] );
 Route::post('/phpcat/tests', [ TestController::class , 'store' ] );

@@ -4,8 +4,10 @@ namespace Modules\Phpcat\Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
+use Modules\Phpcat\Database\factories\TimelineFactory;
+use Modules\Phpcat\Entities\PhpcatNews;
 
-class PhpcatDatabaseSeeder extends Seeder
+class TimelineSeederTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -17,13 +19,9 @@ class PhpcatDatabaseSeeder extends Seeder
         Model::unguard();
 
         // $this->call("OthersTableSeeder");
-        // $this->call("TestsSeeder");
-
-        $this->call([
-        	// UserSeeder::class,
-        	// PostSeeder::class,
-            PhpcatTestSeederTableSeeder::class,
-            TimelineSeederTableSeeder::class
-    	]);
+        PhpcatNews::factory()
+        ->count(50)
+        // ->hasPosts(1)
+        ->create();
     }
 }

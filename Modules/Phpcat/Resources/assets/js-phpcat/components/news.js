@@ -58,19 +58,21 @@ const addNews = async(head, date, text, file = '', link = '') => {
     formData.append('head', head)
     formData.append('date', date)
     formData.append('text', text)
+
     if (file != '') {
-        formData.append('attachment', file)
+        formData.append('img', file)
     }
+
     if (link != '') {
         formData.append('link', link)
     }
 
     let res = await axios
-        .post('/api/news', formData, config)
+        .post('/api/phpcat/news', formData, config)
         .then((response) => console.log(response.data.message))
         .catch((error) => console.log(error))
 
-    console.log('res', res)
+    console.log('addNews res', res)
 
     // let res = await axios
     //     // await axios

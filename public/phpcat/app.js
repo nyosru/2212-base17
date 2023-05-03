@@ -23576,20 +23576,20 @@ var addNews = /*#__PURE__*/function () {
           formData.append('date', date);
           formData.append('text', text);
           if (file != '') {
-            formData.append('attachment', file);
+            formData.append('img', file);
           }
           if (link != '') {
             formData.append('link', link);
           }
           _context3.next = 11;
-          return axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/news', formData, config).then(function (response) {
+          return axios__WEBPACK_IMPORTED_MODULE_2___default().post('/api/phpcat/news', formData, config).then(function (response) {
             return console.log(response.data.message);
           })["catch"](function (error) {
             return console.log(error);
           });
         case 11:
           res = _context3.sent;
-          console.log('res', res);
+          console.log('addNews res', res);
 
           // let res = await axios
           //     // await axios
@@ -25429,7 +25429,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           style: {
             "width": "100%"
           },
-          src: k.img
+          src: '/phpcat/' + k.img
         }, null, 8 /* PROPS */, _hoisted_14)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_15, k.link && k.link.length ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("a", {
           key: 3,
           href: k.link,
