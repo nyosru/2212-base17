@@ -13,9 +13,11 @@
       <router-link :to="{ name: 'findTorrent' }">
         <span class="nobr" >Поиск&nbsp;торрентов</span>
       </router-link>      
-      <router-link :to="{ name: 'money' }">
+      
+      <!-- <router-link :to="{ name: 'money' }">
         <span class="nobr" >Деньги за простые действия!!</span>
-      </router-link>
+      </router-link> -->
+
       <!-- <router-link :to="{ name: 'lern' }">Учится, не переучится</router-link> -->
     </div>
   </div>
